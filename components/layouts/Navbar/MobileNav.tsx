@@ -12,7 +12,7 @@ import {
 export default function MobileNav() {
   return (
     <div className="lg:hidden flex justify-between items-center">
-      <Authors></Authors>
+      <Authors/>
       <Sheet>
         <SheetTrigger asChild>
           <Button variant="ghost">
