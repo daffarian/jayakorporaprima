@@ -1,3 +1,4 @@
+'use client';
 import Authors from './Authors';
 import { Button } from '@/components/ui/button';
 import { Icons } from '@/components/Icons';
@@ -10,12 +11,14 @@ import {
   AccordionTrigger
 } from '@/components/ui/accordion';
 import { Separator } from '@/components/ui/separator';
+import { useState } from 'react';
 
 export default function MobileNav() {
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <div className="lg:hidden flex justify-between items-center">
       <Authors />
-      <Sheet>
+      <Sheet open={isOpen} onOpenChange={setIsOpen}>
         <SheetTrigger asChild>
           <Button variant="ghost">
             <Icons.menu />
@@ -23,7 +26,15 @@ export default function MobileNav() {
         </SheetTrigger>
         <SheetContent>
           <div>
-            <Link className='text-sm' href="/">Home</Link>
+            <Link
+              onClick={() => {
+                setIsOpen(!isOpen);
+              }}
+              className="text-sm"
+              href="/"
+            >
+              Home
+            </Link>
             <Separator className="mt-4" />
           </div>
           <Accordion type="multiple" className="w-full">
@@ -44,8 +55,16 @@ export default function MobileNav() {
               <AccordionContent>Boc & BoD</AccordionContent>
               <AccordionContent>Company Profile</AccordionContent>
             </AccordionItem>
-            <div>
-              <Link className='text-sm' href="/contact">Contact</Link>
+            <div className="mt-4">
+              <Link
+                onClick={() => {
+                  setIsOpen(!isOpen);
+                }}
+                className="text-sm"
+                href="/contact"
+              >
+                Contact
+              </Link>
               <Separator className="mt-4" />
             </div>
           </Accordion>
