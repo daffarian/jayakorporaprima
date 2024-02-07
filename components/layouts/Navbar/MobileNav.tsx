@@ -30,7 +30,7 @@ export default function MobileNav() {
               onClick={() => {
                 setIsOpen(!isOpen);
               }}
-              className="text-sm"
+              className="text-sm hover:text-primary"
               href="/"
             >
               Home
@@ -60,7 +60,7 @@ export default function MobileNav() {
                 onClick={() => {
                   setIsOpen(!isOpen);
                 }}
-                className="text-sm"
+                className="text-sm hover:text-primary"
                 href="/contact"
               >
                 Contact
