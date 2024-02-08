@@ -57,13 +57,19 @@ export default function MobileNav() {
               <AccordionContent>Laundry</AccordionContent>
               <AccordionContent>Product & Service</AccordionContent>
             </AccordionItem>
-            <AccordionItem value="item-2">
-              <AccordionTrigger>About us</AccordionTrigger>
-              <AccordionContent>Sejarah</AccordionContent>
-              <AccordionContent>Visi & Misi</AccordionContent>
-              <AccordionContent>Boc & BoD</AccordionContent>
-              <AccordionContent>Company Profile</AccordionContent>
-            </AccordionItem>
+            
+            <div className="mt-4">
+              <Link
+                onClick={() => {
+                  setIsOpen(!isOpen);
+                }}
+                className="text-sm hover:text-primary"
+                href="/about"
+              >
+                About
+              </Link>
+              <Separator className="mt-4" />
+            </div>
             <div className="mt-4">
               <Link
                 onClick={() => {

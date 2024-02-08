@@ -3,6 +3,7 @@
 import * as React from 'react';
 import { cn } from '@/lib/utils';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -12,6 +13,7 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from '@/components/ui/navigation-menu';
+import clsx from 'clsx';
 const components: { title: string; href: string }[] = [
   {
     title: 'Bisnis Konsultan',
@@ -39,21 +41,24 @@ const components: { title: string; href: string }[] = [
   },
 ];
 export default function DesktopNav() {
+  const pathname = usePathname();
   return (
     <div className="hidden lg:flex lg:justify-between mx-auto text-slate-600">
       <NavigationMenu>
         <NavigationMenuList>
-          <NavigationMenuItem className=" text-white">
+          <NavigationMenuItem
+            className={clsx({ 'text-white': pathname === '/' })}
+          >
             <Link href="/" legacyBehavior passHref>
-              <NavigationMenuLink
-                className={`${navigationMenuTriggerStyle()}`}
-              >
+              <NavigationMenuLink className={`${navigationMenuTriggerStyle()}`}>
                 Home
               </NavigationMenuLink>
             </Link>
           </NavigationMenuItem>
           <NavigationMenuItem>
-            <NavigationMenuTrigger className=" text-white">
+            <NavigationMenuTrigger
+              className={clsx({ 'text-white': pathname === '/' })}
+            >
               Product & Services
             </NavigationMenuTrigger>
             <NavigationMenuContent>
@@ -72,7 +77,9 @@ export default function DesktopNav() {
           <NavigationMenuItem>
             <Link href="/about" legacyBehavior passHref>
               <NavigationMenuLink
-                className={`${navigationMenuTriggerStyle()} text-white`}
+                className={`${navigationMenuTriggerStyle()} ${clsx({
+                  'text-white': pathname === '/'
+                })}`}
               >
                 About Us
               </NavigationMenuLink>
@@ -82,7 +89,9 @@ export default function DesktopNav() {
           <NavigationMenuItem>
             <Link href="/contact" legacyBehavior passHref>
               <NavigationMenuLink
-                className={`${navigationMenuTriggerStyle()} text-white`}
+                className={`${navigationMenuTriggerStyle()} ${clsx({
+                  'text-white': pathname === '/'
+                })}`}
               >
                 Contact
               </NavigationMenuLink>
