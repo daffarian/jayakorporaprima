@@ -1,5 +1,4 @@
 import Authors from '@/components/Authors';
-import { SpaceEvenlyVerticallyIcon } from '@radix-ui/react-icons';
 
 export default function Loading() {
   return (
