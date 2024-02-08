@@ -10,14 +10,14 @@ const config = {
   ],
   prefix: '',
   theme: {
-    container: {
-      center: true,
-      padding: '2rem',
-      screens: {
-        '2xl': '1400px'
-      }
-    },
     extend: {
+      // container: {
+      //   center: true,
+      //   padding: '2rem',
+      //   screens: {
+      //     '2xl': '1400px'
+      //   }
+      // },
       colors: {
         primary: '#004aad',
         secondary: '#001634'

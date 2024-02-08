@@ -2,12 +2,10 @@
 
 import * as React from 'react';
 import { cn } from '@/lib/utils';
-import Authors from '../../Authors';
 import Link from 'next/link';
 import {
   NavigationMenu,
   NavigationMenuContent,
-  NavigationMenuIndicator,
   NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
@@ -42,8 +40,7 @@ const components: { title: string; href: string }[] = [
 ];
 export default function DesktopNav() {
   return (
-    <div className="hidden lg:flex lg:justify-between container mx-auto text-slate-600">
-      <Authors />
+    <div className="hidden lg:flex lg:justify-between mx-auto text-slate-600">
       <NavigationMenu>
         <NavigationMenuList>
           <NavigationMenuItem className=" text-white">

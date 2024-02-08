@@ -16,8 +16,7 @@ import { useState } from 'react';
 export default function MobileNav() {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <div className="lg:hidden flex justify-between items-center">
-      <Authors />
+    <div className="lg:hidden">
       <Sheet open={isOpen} onOpenChange={setIsOpen}>
         <SheetTrigger asChild>
           <Button variant="ghost" className='hover:bg-transparent'>
