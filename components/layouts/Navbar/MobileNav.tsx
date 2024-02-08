@@ -20,8 +20,8 @@ export default function MobileNav() {
       <Authors />
       <Sheet open={isOpen} onOpenChange={setIsOpen}>
         <SheetTrigger asChild>
-          <Button variant="ghost">
-            <Icons.menu />
+          <Button variant="ghost" className='hover:bg-transparent'>
+            {Icons.menu}
           </Button>
         </SheetTrigger>
         <SheetContent>

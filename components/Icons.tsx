@@ -1,7 +1,7 @@
 import { LucideProps, Apple, User, AlignRight } from 'lucide-react';
 
 export const Icons = {
-  menu: AlignRight,
+  menu: <AlignRight color='white'/>,
   apple: Apple,
   user: User,
   logo: (props: LucideProps) => (
