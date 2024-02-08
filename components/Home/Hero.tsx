@@ -3,9 +3,10 @@ import Button from './Button';
 import React from 'react';
 export default function Hero() {
   return (
-    <div className="hero-section relative w-full min-h-screen">
+    <div className="hero-section relative w-full h-screen min-h-">
       <video
         className="absolute h-full w-full object-cover"
+        autoPlay
         muted
         loop
         src="/video/city-light.mp4"
