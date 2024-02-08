@@ -1,5 +1,5 @@
 'use client';
-import Authors from './Authors';
+import Authors from '../../Authors';
 import { Button } from '@/components/ui/button';
 import { Icons } from '@/components/Icons';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
