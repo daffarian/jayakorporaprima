@@ -4,6 +4,9 @@ import { Button } from '@/components/ui/button';
 import { Icons } from '@/components/Icons';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+import clsx from 'clsx';
+
 import {
   Accordion,
   AccordionContent,
@@ -15,12 +18,19 @@ import { useState } from 'react';
 
 export default function MobileNav() {
   const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname();
+  let iconMenu;
+  if (pathname === '/') {
+    iconMenu = Icons.menuWhite;
+  } else {
+    iconMenu = Icons.menu;
+  }
   return (
     <div className="lg:hidden">
       <Sheet open={isOpen} onOpenChange={setIsOpen}>
         <SheetTrigger asChild>
-          <Button variant="ghost" className='hover:bg-transparent'>
-            {Icons.menu}
+          <Button variant="ghost" className="hover:bg-transparent">
+            {iconMenu}
           </Button>
         </SheetTrigger>
         <SheetContent>
