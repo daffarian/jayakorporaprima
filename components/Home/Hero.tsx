@@ -1,4 +1,3 @@
-'use client';
 import Button from './Button';
 import React from 'react';
 export default function Hero() {

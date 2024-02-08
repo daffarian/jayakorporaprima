@@ -1,10 +1,12 @@
-'use client'
-import Authors from "@/components/Authors";
+import Authors from '@/components/Authors';
+import { SpaceEvenlyVerticallyIcon } from '@radix-ui/react-icons';
 
-export default function Loading(){
+export default function Loading() {
   return (
-    <main className="h-svh w-full z-10 bg-white flex item-center justify-center">
-      <Authors/>
+    <main className="h-svh w-full fixed z-50 bg-white flex item-center justify-center">
+      <div className="animate-pulse flex">
+        <Authors />
+      </div>
     </main>
-  )
+  );
 }
