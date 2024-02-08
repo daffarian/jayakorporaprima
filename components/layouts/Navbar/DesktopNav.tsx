@@ -46,17 +46,17 @@ export default function DesktopNav() {
       <Authors />
       <NavigationMenu>
         <NavigationMenuList>
-          <NavigationMenuItem>
+          <NavigationMenuItem className=" text-white">
             <Link href="/" legacyBehavior passHref>
               <NavigationMenuLink
-                className={`${navigationMenuTriggerStyle()} hover:text-primary`}
+                className={`${navigationMenuTriggerStyle()}`}
               >
                 Home
               </NavigationMenuLink>
             </Link>
           </NavigationMenuItem>
           <NavigationMenuItem>
-            <NavigationMenuTrigger className=" hover:text-primary">
+            <NavigationMenuTrigger className=" text-white">
               Product & Services
             </NavigationMenuTrigger>
             <NavigationMenuContent>
@@ -75,7 +75,7 @@ export default function DesktopNav() {
           <NavigationMenuItem>
             <Link href="/about" legacyBehavior passHref>
               <NavigationMenuLink
-                className={`${navigationMenuTriggerStyle()} hover:text-primary`}
+                className={`${navigationMenuTriggerStyle()} text-white`}
               >
                 About Us
               </NavigationMenuLink>
@@ -85,7 +85,7 @@ export default function DesktopNav() {
           <NavigationMenuItem>
             <Link href="/contact" legacyBehavior passHref>
               <NavigationMenuLink
-                className={`${navigationMenuTriggerStyle()} hover:text-primary`}
+                className={`${navigationMenuTriggerStyle()} text-white`}
               >
                 Contact
               </NavigationMenuLink>
