@@ -10,6 +10,9 @@ const config = {
   ],
   prefix: '',
   theme: {
+    container: {
+      center: true,
+    },
     extend: {
       // container: {
       //   center: true,

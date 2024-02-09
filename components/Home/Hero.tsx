@@ -14,7 +14,7 @@ export default function Hero() {
         <div className="absolute inset-0 bg-black/50 z-[1] flex flex-col lg:items-center  items-start justify-end gap-4 p-5">
           <div className="flex flex-col  lg:max-w-2xl lg:justify-center lg:mb-20 gap-6 container mx-auto">
             <h1 className="font-medium  lg:text-7xl text-5xl text-white">
-              Security & Access System Solution
+              Security & Access Control System Solution
             </h1>
             <div>
               <Button />
@@ -22,7 +22,7 @@ export default function Hero() {
           </div>
         </div>
       </div>
-      <p>
+      <p className='px-4 text-justify mt-4'>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam qui
         aliquam doloremque vero quo, soluta libero quod eos non illum delectus
         eius mollitia assumenda consequatur ad aspernatur ullam, obcaecati
