@@ -1,9 +1,7 @@
 import type { Metadata } from 'next';
-import { Montserrat } from 'next/font/google';
+import { montserrat } from '../components/fonts';
 import './globals.css';
 import Header from '@/components/layouts/Header';
-
-const montserrat = Montserrat({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'Jayakorporaprima',
