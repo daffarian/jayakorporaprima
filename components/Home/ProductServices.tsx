@@ -9,24 +9,26 @@ import {
   CarouselNext,
   CarouselPrevious
 } from '@/components/ui/carousel';
+import Image from 'next/image';
 
 export default function ProductServices() {
+  
   return (
     <section
-      className="bg-cover py-10"
+      className="bg-cover "
       style={{
         backgroundImage:
           'url("/background/home-product-service-background.svg")'
       }}
     >
-      <div className="backdrop-blur-[5px]">
+      <div className="bg-gradient-to-t from-white via-white backdrop-blur-[1px] py-10">
         <div className="container px-4">
-          <h2 className="my-10">Product & Services</h2>
+          <h2 className="my-10">Produk & Layanan</h2>
           <p className="max-w-md">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem
-            maiores aliquam eveniet saepe, similique fugiat ut eaque dolore
-            distinctio porro beatae aliquid vero reprehenderit aperiam suscipit
-            pariatur? Aliquam, consectetur amet.
+            Kami menyediakan solusi sistem keamanan dan kontrol akses yang andal
+            untuk kebutuhan bisnis Anda. Dengan pendekatan inovatif dan
+            teknologi terkini, kami menghadirkan solusi terintegrasi untuk
+            melindungi aset Anda dan memastikan keamanan maksimal.
           </p>
         </div>
         {/* Carousel */}
@@ -49,9 +51,14 @@ export default function ProductServices() {
                   <div className="p-1">
                     <Card>
                       <CardContent className="flex aspect-square items-center justify-center p-6">
-                        <span className="text-2xl font-semibold">
-                          {index + 1}
-                        </span>
+                        <Image
+                          src={
+                            'https://source.unsplash.com/collection/1163637/480x480'
+                          }
+                          alt="tes"
+                          width={480}
+                          height={480}
+                        />
                       </CardContent>
                     </Card>
                   </div>
