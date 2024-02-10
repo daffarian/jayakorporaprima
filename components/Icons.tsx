@@ -2,10 +2,11 @@ import { LucideProps, Apple, User, AlignRight, ChevronRight } from 'lucide-react
 const primary = "#004aad"
 export const Icons = {
   menuWhite: <AlignRight color="white" />,
-  menu: <AlignRight color={primary}/>,
+  menu: <AlignRight color={primary} />,
   apple: Apple,
   user: User,
-  goto: <ChevronRight color={primary}/>,
+  goto: <ChevronRight color={primary} />,
+  gotoDark: <ChevronRight color={'white'} />,
   logo: (props: LucideProps) => (
     <svg
       xmlns="http://www.w3.org/2000/svg"

@@ -22,8 +22,8 @@ export default function ProductServices() {
           'url("/background/home-product-service-background.svg")'
       }}
     >
-      <div className="bg-gradient-to-t lg:container gap-4 from-white via-white py-10 flex flex-col lg:flex-row">
-        <div className="container px-4">
+      <div className="bg-gradient-to-t lg:container gap-4 from-white via-white py-10 flex flex-col md:flex-row">
+        <div className="container px-4 min-w-[20rem]">
           <h2 className="my-10">Produk & Layanan</h2>
           <p className="max-w-md">
             Kami menyediakan solusi sistem keamanan dan kontrol akses yang andal
@@ -34,9 +34,9 @@ export default function ProductServices() {
           <GoTo link="product-&-service">Selengkapnya</GoTo>
         </div>
         {/* Carousel */}
-        <div className="flex justify-center mt-5 lg:mt-0 lg:px-4 lg:py-10 max-w-[48rem]">
+        <div className="flex justify-center mt-5 lg:mt-0 lg:px-4 lg:py-10 md:max-w-[25rem] lg:max-w-[48rem]">
           <Carousel
-            className="w-full"
+            className="w-full flex items-center"
             plugins={[
               Autoplay({
                 delay: 4000,
@@ -44,18 +44,24 @@ export default function ProductServices() {
               })
             ]}
           >
-            <CarouselContent className="px-4">
+            <CarouselContent className="p-4">
               {productAndService.map((item) => (
                 <CarouselItem
                   key={item.id}
-                  className="sm:basis-1/2 lg:basis-1/3 pl-4"
+                  className="lg:basis-1/3 sm:1/2 pl-4"
                 >
-                  <div className="p-1">
-                    <div className={`bg-${item.color}-400 rounded-lg`}>
-                      <div className="flex flex-col items-center justify-center p-6">
-                        <h3 className='text-zinc-800 text-center text-xl font-bold'>{item.title}</h3>
-                        <Separator className='my-3 bg-zinc-600'/>
-                        <p className='text-zinc-800'>{item.description}</p>
+                  <div
+                    className={`p-1 border-primary border-[1px] px-5 rounded-sm shadow-md lg:aspect-square ${item.color}`}
+                  >
+                    <div className={``}>
+                      <div className="flex flex-col items-center justify-center p-2">
+                        <h3 className="text-zinc-800 text-center text-lg font-bold">
+                          {item.title}
+                        </h3>
+                        <Separator className="my-3 bg-zinc-600" />
+                        <p className="text-zinc-800 text-sm">
+                          {item.description}
+                        </p>
                       </div>
                     </div>
                   </div>

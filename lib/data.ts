@@ -6,7 +6,7 @@ export const productAndService = [
       'Konsultasikan masalah bisnis anda dan temukan solusi bersama kami',
     image: '12',
     link: '/product-&-service',
-    color: 'cyan'
+    color: 'bg-cyan-400'
   },
   {
     id: 'pas-2',
