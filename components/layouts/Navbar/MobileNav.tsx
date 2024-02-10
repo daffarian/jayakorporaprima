@@ -1,11 +1,9 @@
 'use client';
-import Authors from '../../Authors';
 import { Button } from '@/components/ui/button';
 import { Icons } from '@/components/Icons';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import clsx from 'clsx';
 
 import {
   Accordion,

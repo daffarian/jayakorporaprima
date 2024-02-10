@@ -13,7 +13,6 @@ import Image from 'next/image';
 import GoTo from '../GoTo';
 
 export default function ProductServices() {
-  
   return (
     <section
       className="bg-cover "
