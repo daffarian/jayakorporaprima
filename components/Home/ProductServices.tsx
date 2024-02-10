@@ -22,7 +22,7 @@ export default function ProductServices() {
           'url("/background/home-product-service-background.svg")'
       }}
     >
-      <div className="bg-gradient-to-t from-white via-white backdrop-blur-[1px] py-10">
+      <div className="bg-gradient-to-t from-white via-white py-10">
         <div className="container px-4">
           <h2 className="my-10">Produk & Layanan</h2>
           <p className="max-w-md">
@@ -48,7 +48,7 @@ export default function ProductServices() {
               {Array.from({ length: 6 }).map((_, index) => (
                 <CarouselItem
                   key={index}
-                  className="sm:basis-1/2 lg:basis-1/3 pl-4"
+                  className="sm:basis-1/2 md:basis-1/3 lg:basis-1/4 pl-4"
                 >
                   <div className="p-1">
                     <Card>
