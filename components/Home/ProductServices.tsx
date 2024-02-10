@@ -9,8 +9,9 @@ import {
   CarouselNext,
   CarouselPrevious
 } from '@/components/ui/carousel';
-import Image from 'next/image';
 import GoTo from '../GoTo';
+import { productAndService } from '@/lib/data';
+import { Separator } from '@/components/ui/separator';
 
 export default function ProductServices() {
   return (
@@ -21,7 +22,7 @@ export default function ProductServices() {
           'url("/background/home-product-service-background.svg")'
       }}
     >
-      <div className="bg-gradient-to-t from-white via-white py-10">
+      <div className="bg-gradient-to-t lg:container gap-4 from-white via-white py-10 flex flex-col lg:flex-row">
         <div className="container px-4">
           <h2 className="my-10">Produk & Layanan</h2>
           <p className="max-w-md">
@@ -30,10 +31,10 @@ export default function ProductServices() {
             teknologi terkini, kami menghadirkan solusi terintegrasi untuk
             melindungi aset Anda dan memastikan keamanan maksimal.
           </p>
-        <GoTo link='product-&-service'>Selengkapnya</GoTo>
+          <GoTo link="product-&-service">Selengkapnya</GoTo>
         </div>
         {/* Carousel */}
-        <div className="flex justify-center mt-5">
+        <div className="flex justify-center mt-5 lg:mt-0 lg:px-4 lg:py-10 max-w-[48rem]">
           <Carousel
             className="w-full"
             plugins={[
@@ -44,24 +45,19 @@ export default function ProductServices() {
             ]}
           >
             <CarouselContent className="px-4">
-              {Array.from({ length: 6 }).map((_, index) => (
+              {productAndService.map((item) => (
                 <CarouselItem
-                  key={index}
-                  className="sm:basis-1/2 md:basis-1/3 lg:basis-1/4 pl-4"
+                  key={item.id}
+                  className="sm:basis-1/2 lg:basis-1/3 pl-4"
                 >
                   <div className="p-1">
-                    <Card>
-                      <CardContent className="flex aspect-square items-center justify-center p-6">
-                        <Image
-                          src={
-                            'https://source.unsplash.com/collection/1163637/480x480'
-                          }
-                          alt="tes"
-                          width={480}
-                          height={480}
-                        />
-                      </CardContent>
-                    </Card>
+                    <div className={`bg-${item.color}-400 rounded-lg`}>
+                      <div className="flex flex-col items-center justify-center p-6">
+                        <h3 className='text-zinc-800 text-center text-xl font-bold'>{item.title}</h3>
+                        <Separator className='my-3 bg-zinc-600'/>
+                        <p className='text-zinc-800'>{item.description}</p>
+                      </div>
+                    </div>
                   </div>
                 </CarouselItem>
               ))}
