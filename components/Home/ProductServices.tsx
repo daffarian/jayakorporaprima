@@ -10,6 +10,7 @@ import {
   CarouselPrevious
 } from '@/components/ui/carousel';
 import Image from 'next/image';
+import GoTo from '../GoTo';
 
 export default function ProductServices() {
   
@@ -30,6 +31,7 @@ export default function ProductServices() {
             teknologi terkini, kami menghadirkan solusi terintegrasi untuk
             melindungi aset Anda dan memastikan keamanan maksimal.
           </p>
+        <GoTo link='product-&-service'>Selengkapnya</GoTo>
         </div>
         {/* Carousel */}
         <div className="flex justify-center mt-5">
