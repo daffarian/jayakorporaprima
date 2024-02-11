@@ -2,7 +2,7 @@ import GoTo, { GotoDark } from "../GoTo";
 
 export default function About(){
   return (
-    <section className="bg-secondary">
+    <section className="bg-primary">
       <div className="container py-10 px-4">
         <h2 className="py-10 text-white">Tentang Kami</h2>
         <p className="text-zinc-200">
