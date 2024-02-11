@@ -14,7 +14,7 @@ export const Icons = {
   user: User,
   goto: <ChevronRight color={primary} />,
   gotoDark: <ChevronRight color={'white'} />,
-  mail: <Mail />,
+  mail: <Mail color={primary} />,
   whatsapp: (props: LucideProps) => (
     <svg
       fill={primary}

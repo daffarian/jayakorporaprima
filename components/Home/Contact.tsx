@@ -6,7 +6,7 @@ export default function Contact() {
       <div className="container px-4 py-10">
         <h2 className="my-10">Hubungi Kami</h2>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
-          <div className="grid grid-cols-1 gap-3 order-last lg:order-1">
+          <div className="grid grid-cols-1 gap-5 order-last lg:order-1">
             <div>
               <h3>Jam Operasional : </h3>
               <ul className="list-disc pl-5 text-zinc-700 font-medium">
