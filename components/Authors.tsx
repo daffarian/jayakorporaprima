@@ -10,7 +10,7 @@ export default function Authors() {
         height={40}
       ></Image>
       <span className={`text-primary font-bold text-xl ${inter.className}`}>
-        JAYAKORPORAPRIMA
+        JAYA KORPORA PRIMA
       </span>
     </span>
   );

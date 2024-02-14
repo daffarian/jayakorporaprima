@@ -2,10 +2,11 @@ import type { Metadata } from 'next';
 import { montserrat } from '../components/fonts';
 import './globals.css';
 import Header from '@/components/layouts/Header';
+import Footer from '@/components/layouts/Footer';
 
 export const metadata: Metadata = {
-  title: 'Jayakorporaprima',
-  description: 'Securiry & Access System Solution'
+  title: 'Jaya Korpora Prima',
+  description: 'Access Control System'
 };
 
 export default function RootLayout({
@@ -18,6 +19,7 @@ export default function RootLayout({
       <body className={montserrat.className}>
         <Header />
         {children}
+        <Footer/>
       </body>
     </html>
   );

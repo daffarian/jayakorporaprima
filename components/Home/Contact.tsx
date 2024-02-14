@@ -8,7 +8,7 @@ export default function Contact() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
           <div className="grid grid-cols-1 gap-5 order-last lg:order-1">
             <div>
-              <h3>Operational hour : </h3>
+              <h3>Operational hour </h3>
               <ul className="list-disc pl-5 text-zinc-700 font-medium">
                 <li>Monday - Friday : 8:00 AM - 5:00 PM</li>
                 <li>Saturday & Sunday : Closed</li>

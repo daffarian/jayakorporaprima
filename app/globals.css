@@ -7,9 +7,16 @@
     @apply font-bold text-2xl text-primary;
   }
   h3 {
-    @apply font-bold text-zinc-700
+    @apply font-bold text-zinc-700;
   }
-  p{
-    @apply text-zinc-700 font-medium
+  p {
+    @apply text-zinc-700 font-medium;
+  }
+
+  ul {
+    @apply font-medium;
+  }
+  li {
+    @apply font-medium;
   }
 }

@@ -21,7 +21,7 @@ export default function ProductServices() {
           'url("/background/home-product-service-background.svg")'
       }}
     >
-      <div className="bg-gradient-to-t lg:container gap-4 from-white via-white py-10 flex flex-col md:flex-row">
+      <div className="bg-gradient-to-t lg:container gap-4 from-white py-10 flex flex-col md:flex-row">
         <div className="container px-4 min-w-[20rem]">
           <h2 className="my-10">Products & Services</h2>
           <p className="max-w-md">
