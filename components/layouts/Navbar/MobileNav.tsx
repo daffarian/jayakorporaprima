@@ -47,12 +47,10 @@ export default function MobileNav() {
           <Accordion type="multiple" className="w-full">
             <AccordionItem value="item-1">
               <AccordionTrigger>Product & Service</AccordionTrigger>
-              <AccordionContent>Consulting Business</AccordionContent>
+              <AccordionContent>Business and Project Consultant</AccordionContent>
               <AccordionContent>Parking Solution</AccordionContent>
               <AccordionContent>Security System Solution</AccordionContent>
               <AccordionContent>Machinery & Equipment</AccordionContent>
-              <AccordionContent>Tour & Travel</AccordionContent>
-              <AccordionContent>Laundry</AccordionContent>
             </AccordionItem>
 
             <div className="mt-4">

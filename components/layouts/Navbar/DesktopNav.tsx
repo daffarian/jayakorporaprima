@@ -30,15 +30,7 @@ const components: { title: string; href: string }[] = [
   {
     title: 'Machinery & Equipment',
     href: '/docs/primitives/scroll-area'
-  },
-  {
-    title: 'Tour & Travel',
-    href: '/docs/primitives/tabs'
-  },
-  {
-    title: 'Laundry',
-    href: '/docs/primitives/tooltip'
-  },
+  }
 ];
 export default function DesktopNav() {
   const pathname = usePathname();

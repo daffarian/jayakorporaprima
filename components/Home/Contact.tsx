@@ -4,14 +4,14 @@ export default function Contact() {
   return (
     <section>
       <div className="container px-4 py-10">
-        <h2 className="my-10">Hubungi Kami</h2>
+        <h2 className="my-10">Contact Us</h2>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
           <div className="grid grid-cols-1 gap-5 order-last lg:order-1">
             <div>
-              <h3>Jam Operasional : </h3>
+              <h3>Operational hour : </h3>
               <ul className="list-disc pl-5 text-zinc-700 font-medium">
-                <li>Senin - Jumat : 08:00 - 17:00</li>
-                <li>Sabtu & Minggu : Tutup</li>
+                <li>Monday - Friday : 8:00 AM - 5:00 PM</li>
+                <li>Saturday & Sunday : Closed</li>
               </ul>
             </div>
             {/* Contact */}
@@ -19,7 +19,10 @@ export default function Contact() {
             {/* Address */}
             <div>
               <h3>Office Address</h3>
-              <a className='text-zinc-700 font-medium hover:underline' href="https://maps.app.goo.gl/E8gu3Mv4GYE6Skaz5">
+              <a
+                className="text-zinc-700 font-medium hover:underline"
+                href="https://maps.app.goo.gl/E8gu3Mv4GYE6Skaz5"
+              >
                 The Mansion Office Fontana, Lantai 17 Unit BF-17 B2, Jln.
                 Trembesi, Pademangan TImur - Pademangan, Jakarta - 14410
               </a>
@@ -29,19 +32,19 @@ export default function Contact() {
               <h3>Whatsapp Business</h3>
               <a
                 className="text-blue-600 font-medium hover:underline inline-flex flex-row gap-2 items-center"
-                href="https://wa.me/6285797845453"
+                href="https://wa.me/6285771679611"
               >
                 <Icons.whatsapp className="" />
-                62-8579-7845-453
+                62-8577-1679-611
               </a>
             </div>
             <div>
               <h3>Email</h3>
               <a
                 className="text-blue-600 font-medium hover:underline inline-flex flex-row gap-2 item-center"
-                href="mailto:admin@jayakorporaprima.co.id"
+                href="mailto:info@jayakorporaprima.co.id"
               >
-                {Icons.mail}admin@jayakorporaprima.co.id
+                {Icons.mail}info@jayakorporaprima.co.id
               </a>
             </div>
           </div>

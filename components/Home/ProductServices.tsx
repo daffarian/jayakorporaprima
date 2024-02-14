@@ -1,7 +1,6 @@
 'use client';
 import * as React from 'react';
 import Autoplay from 'embla-carousel-autoplay';
-import { Card, CardContent } from '@/components/ui/card';
 import {
   Carousel,
   CarouselContent,
@@ -24,14 +23,14 @@ export default function ProductServices() {
     >
       <div className="bg-gradient-to-t lg:container gap-4 from-white via-white py-10 flex flex-col md:flex-row">
         <div className="container px-4 min-w-[20rem]">
-          <h2 className="my-10">Produk & Layanan</h2>
+          <h2 className="my-10">Products & Services</h2>
           <p className="max-w-md">
-            Kami menyediakan solusi sistem keamanan dan kontrol akses yang andal
-            untuk kebutuhan bisnis Anda. Dengan pendekatan inovatif dan
-            teknologi terkini, kami menghadirkan solusi terintegrasi untuk
-            melindungi aset Anda dan memastikan keamanan maksimal.
+            We provide reliable security and access control system solutions for
+            your business needs. With an innovative approach and the latest
+            technology, we present integrated solutions for protect your assets
+            and ensure maximum security.
           </p>
-          <GoTo link="product-&-service">Selengkapnya</GoTo>
+          <GoTo link="product-&-service">More</GoTo>
         </div>
         {/* Carousel */}
         <div className="flex justify-center mt-5 lg:mt-0 lg:px-4 lg:py-10 md:max-w-[25rem] lg:max-w-[48rem]">

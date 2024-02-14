@@ -4,17 +4,16 @@ export default function About(){
   return (
     <section className="bg-primary">
       <div className="container py-10 px-4">
-        <h2 className="py-10 text-white">Tentang Kami</h2>
+        <h2 className="py-10 text-white">About Us</h2>
         <p className="text-zinc-200">
-          Kami adalah tim berpengalaman dan bersemangat yang berfokus pada
-          keamanan, aksesibilitas, dan kenyamanan. Kami memahami bahwa setiap
-          bisnis memiliki tantangan dan kebutuhan uniknya sendiri, dan kami siap
-          memberikan solusi yang tepat untuk Anda. Dengan pendekatan yang
-          kolaboratif dan berorientasi pada pelanggan, kami bertekad untuk
-          menciptakan solusi yang memenuhi harapan dan mengatasi tantangan yang
-          Anda hadapi.
+          We are an experienced and passionate team focused on security,
+          accessibility and convenience. We understand that every businesses
+          have their own unique challenges and needs, and we are ready provide
+          the right solution for you. With that approach collaborative and
+          customer-oriented, we are determined to create solutions that meet
+          expectations and overcome challenges you face.
         </p>
-        <GotoDark link="about">Selengkapnya</GotoDark>
+        <GotoDark link="about">More</GotoDark>
       </div>
     </section>
   );

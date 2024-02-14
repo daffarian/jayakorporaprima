@@ -1,9 +1,9 @@
 export const productAndService = [
   {
     id: 'pas-1',
-    title: 'Consultant Business',
+    title: 'Business and Project Consultant',
     description:
-      'Konsultasikan masalah bisnis anda dan temukan solusi bersama kami',
+      'Consult on your business and project problems and find comprehensive solutions with us',
     image: '12',
     link: '/product-&-service',
     color: 'bg-cyan-400'
@@ -11,7 +11,7 @@ export const productAndService = [
   {
     id: 'pas-2',
     title: 'Parking Solution',
-    description: 'Teknologi Terdepan untuk Parkir yang Efisien dan Aman',
+    description: 'Advanced Technology for Efficient and Safe Parking',
     image: '12',
     link: '/product-&-service',
     color: 'green'
@@ -19,7 +19,7 @@ export const productAndService = [
   {
     id: 'pas-3',
     title: 'Security System Solution',
-    description: 'Solusi Sistem Keamanan Terkemuka untuk Perlindungan Optimal',
+    description: 'Leading Security System Solutions for Optimal Protection',
     image: '12',
     link: '/product-&-service',
     color: 'red'
@@ -27,28 +27,9 @@ export const productAndService = [
   {
     id: 'pas-4',
     title: 'Machinery & Equipment',
-    description:
-      'Temukan Mesin dan Peralatan Berkualitas untuk Kebutuhan Bisnis Anda',
+    description: 'Find Quality Machines and Equipment for Your Business Needs',
     image: '12',
     link: '/product-&-service',
     color: 'yellow'
-  },
-  {
-    id: 'pas-5',
-    title: 'Tour & Travel',
-    description:
-      'Temukan Destinasi Impian Anda dengan Paket Wisata Kami yang Menarik',
-    image: '12',
-    link: '/product-&-service',
-    color: 'blue'
-  },
-  {
-    id: 'pas-6',
-    title: 'Laundry',
-    description:
-      'Layanan Laundry yang Handal dan Terpercaya untuk Kebutuhan Anda',
-    image: '12',
-    link: '/product-&-service',
-    color: 'violet'
   }
 ];
