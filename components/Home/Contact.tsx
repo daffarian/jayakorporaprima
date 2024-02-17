@@ -9,7 +9,7 @@ export default function Contact() {
           <div className="grid grid-cols-1 gap-5 order-last lg:order-1">
             <div>
               <h3>Operational hour </h3>
-              <ul className="list-disc pl-5 text-zinc-700 font-medium">
+              <ul className="list-disc pl-5 text-neutral-800 font-medium">
                 <li>Monday - Friday : 8:00 AM - 5:00 PM</li>
                 <li>Saturday & Sunday : Closed</li>
               </ul>
@@ -20,7 +20,7 @@ export default function Contact() {
             <div>
               <h3>Office Address</h3>
               <a
-                className="text-zinc-700 font-medium hover:underline"
+                className="text-neutral-800 font-medium hover:underline"
                 href="https://maps.app.goo.gl/YzyeqtGYVy3FTRvC7"
                 target='_blank'
               >

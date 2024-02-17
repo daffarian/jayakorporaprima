@@ -1,4 +1,4 @@
-import { inter } from '../components/fonts';
+import { roboto } from '../components/fonts';
 import Image from 'next/image';
 export default function Authors() {
   return (
@@ -9,7 +9,7 @@ export default function Authors() {
         width={40}
         height={40}
       ></Image>
-      <span className={`text-primary font-bold text-xl ${inter.className}`}>
+      <span className={`text-primary font-bold text-xl ${roboto.className}`}>
         JAYA KORPORA PRIMA
       </span>
     </span>

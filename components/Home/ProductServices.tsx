@@ -54,11 +54,11 @@ export default function ProductServices() {
                   >
                     <div className={``}>
                       <div className="flex flex-col items-center justify-center p-2">
-                        <h3 className="text-zinc-800 text-center text-lg font-bold">
+                        <h3 className="text-neutral-800 text-center text-lg font-bold">
                           {item.title}
                         </h3>
                         <Separator className="my-3 bg-zinc-600" />
-                        <p className="text-zinc-800 text-sm">
+                        <p className="text-neutral-800">
                           {item.description}
                         </p>
                       </div>

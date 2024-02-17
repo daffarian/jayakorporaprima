@@ -44,27 +44,29 @@ export default function MobileNav() {
             </Link>
             <Separator className="mt-4" />
           </div>
+          <div className="mt-4">
+            <Link
+              onClick={() => {
+                setIsOpen(!isOpen);
+              }}
+              className="text-sm hover:text-primary"
+              href="/about"
+            >
+              About
+            </Link>
+            <Separator className="mt-4" />
+          </div>
           <Accordion type="multiple" className="w-full">
             <AccordionItem value="item-1">
               <AccordionTrigger>Product & Service</AccordionTrigger>
-              <AccordionContent>Business and Project Consultant</AccordionContent>
+              <AccordionContent>
+                Business and Project Consultant
+              </AccordionContent>
               <AccordionContent>Parking Solution</AccordionContent>
               <AccordionContent>Security System Solution</AccordionContent>
               <AccordionContent>Machinery & Equipment</AccordionContent>
             </AccordionItem>
 
-            <div className="mt-4">
-              <Link
-                onClick={() => {
-                  setIsOpen(!isOpen);
-                }}
-                className="text-sm hover:text-primary"
-                href="/about"
-              >
-                About
-              </Link>
-              <Separator className="mt-4" />
-            </div>
             <div className="mt-4">
               <Link
                 onClick={() => {

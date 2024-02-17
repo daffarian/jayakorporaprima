@@ -11,7 +11,7 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
   NavigationMenuTrigger,
-  navigationMenuTriggerStyle,
+  navigationMenuTriggerStyle
 } from '@/components/ui/navigation-menu';
 import clsx from 'clsx';
 const components: { title: string; href: string }[] = [
@@ -48,6 +48,17 @@ export default function DesktopNav() {
             </Link>
           </NavigationMenuItem>
           <NavigationMenuItem>
+            <Link href="/about" legacyBehavior passHref>
+              <NavigationMenuLink
+                className={`${navigationMenuTriggerStyle()} ${clsx({
+                  'text-white': pathname === '/'
+                })}`}
+              >
+                About Us
+              </NavigationMenuLink>
+            </Link>
+          </NavigationMenuItem>
+          <NavigationMenuItem>
             <NavigationMenuTrigger
               className={clsx({ 'text-white': pathname === '/' })}
             >
@@ -66,18 +77,6 @@ export default function DesktopNav() {
               </ul>
             </NavigationMenuContent>
           </NavigationMenuItem>
-          <NavigationMenuItem>
-            <Link href="/about" legacyBehavior passHref>
-              <NavigationMenuLink
-                className={`${navigationMenuTriggerStyle()} ${clsx({
-                  'text-white': pathname === '/'
-                })}`}
-              >
-                About Us
-              </NavigationMenuLink>
-            </Link>
-          </NavigationMenuItem>
-
           <NavigationMenuItem>
             <Link href="/contact" legacyBehavior passHref>
               <NavigationMenuLink

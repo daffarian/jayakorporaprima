@@ -5,7 +5,7 @@ export default function About(){
     <section className="bg-primary">
       <div className="container py-10 px-4">
         <h2 className="py-10 text-white">About Us</h2>
-        <p className="text-zinc-200">
+        <p className="text-neutral-200">
           We are an experienced and passionate team focused on security,
           accessibility and convenience. We understand that every businesses
           have their own unique challenges and needs, and we are ready provide
