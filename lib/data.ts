@@ -17,7 +17,7 @@ export async function fetchPostById(id: number) {
   try {
     const postById = await prisma.post.findUnique({
       where: {
-        id,
+        id
       }
     });
     return postById;
@@ -25,6 +25,7 @@ export async function fetchPostById(id: number) {
     console.error(error);
   }
 }
+
 
 export const productAndService = [
   {

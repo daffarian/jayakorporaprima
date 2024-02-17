@@ -6,6 +6,8 @@ export default function Partners(){
         <Image src={'/images/partners/magnetic.jpg'} width={300} height={100} alt="Magnetic"/>
         <Image src={'/images/partners/faac-technologies.jpg'} width={300} height={100} alt="Faac Technologies"/>
         <Image src={'/images/partners/parking-hub-technology.jpg'} width={300} height={100} alt="Parking Hub Technology"/>
+        <Image src={'/images/partners/life.jpg'} width={300} height={100} alt="Life"/>
+        <Image src={'/images/partners/tgw.jpg'} width={150} height={100} alt="Tgw"/>
       </div>
     </section>
   )

@@ -21,7 +21,8 @@ export default function Contact() {
               <h3>Office Address</h3>
               <a
                 className="text-zinc-700 font-medium hover:underline"
-                href="https://maps.app.goo.gl/E8gu3Mv4GYE6Skaz5"
+                href="https://maps.app.goo.gl/YzyeqtGYVy3FTRvC7"
+                target='_blank'
               >
                 The Mansion Office Fontana, Lantai 17 Unit BF-17 B2, Jln.
                 Trembesi, Pademangan TImur - Pademangan, Jakarta - 14410
