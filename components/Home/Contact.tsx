@@ -6,7 +6,7 @@ export default function Contact() {
       <div className="container px-4 py-10">
         <h2 className="my-10">Contact Us</h2>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
-          <div className="grid grid-cols-1 gap-5 order-last lg:order-1">
+          <address className="grid grid-cols-1 gap-5 order-last lg:order-1 not-italic">
             <div>
               <h3>Operational hour </h3>
               <ul className="list-disc pl-5 text-neutral-800 font-medium">
@@ -48,7 +48,7 @@ export default function Contact() {
                 {Icons.mail}info@jayakorporaprima.co.id
               </a>
             </div>
-          </div>
+          </address>
           <div className="order-1">
             <iframe
               className="aspect-square w-full border-blue-400 border-[1px] rounded-sm"
