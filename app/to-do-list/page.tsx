@@ -9,7 +9,7 @@ function ButtonCreate() {
   return (
     <Link
       href={'/to-do-list/create'}
-      className=" bg-primary p-2 rounded-md inline-flex"
+      className=" bg-primary p-2 rounded-md inline-flex hover:brightness-75"
     >
       {Icons.plus}
     </Link>
@@ -18,7 +18,10 @@ function ButtonCreate() {
 
 function ButtonEdit({ id }: { id: number }) {
   return (
-    <Link href={`/to-do-list/${id}/edit`} className="bg-primary p-2 rounded-md">
+    <Link
+      href={`/to-do-list/${id}/edit`}
+      className="bg-primary p-2 rounded-md hover:brightness-75"
+    >
       {Icons.pencil}
     </Link>
   );
@@ -29,7 +32,9 @@ function ButtonDelete({ id }: { id: number }) {
 
   return (
     <form action={deleteTodoWithId}>
-      <button className="bg-red-500 p-2 rounded-md">{Icons.trash}</button>
+      <button className="bg-red-500 p-2 rounded-md hover:brightness-75">
+        {Icons.trash}
+      </button>
     </form>
   );
 }
@@ -38,12 +43,12 @@ export default async function Page() {
   const posts = await fetchPosts();
 
   return (
-    <div className="container px-4 mt-20">
+    <div className="container px-4 pt-20">
       <ButtonCreate />
-      <div className="py-10 flex flex-col flex-wrap sm:flex-row gap-5">
+      <div className="py-10 grid grid-cols-1 sm:grid-cols-2 place-items-start gap-5">
         {posts.length > 0 ? (
           posts.map((post: Article) => (
-            <Card key={post.id} className="p-5 shadow-xl">
+            <Card key={post.id} className="p-5 shadow-xl w-full">
               <div className="flex flex-row justify-between gap-5">
                 <div>
                   <h3 className="text-primary text-lg mb-3">{post.title}</h3>

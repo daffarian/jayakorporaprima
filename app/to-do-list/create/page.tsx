@@ -1,3 +1,4 @@
+import Tiptap from '@/components/Tiptap';
 import { Button } from '@/components/ui/button';
 import { submitTodo } from '@/lib/action';
 import Link from 'next/link';
@@ -5,7 +6,7 @@ import { Suspense } from 'react';
 
 export default function Page() {
   return (
-    <div className="flex flex-col py-10 px-4 container">
+    <div className="flex flex-col py-20 px-4 container">
       <form action={submitTodo} className="flex flex-col gap-5">
         <div className="flex flex-col gap-1">
           <label htmlFor="title" className="font-medium">

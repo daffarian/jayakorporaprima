@@ -1,6 +1,6 @@
 export default function Page() {
   return (
-    <section className="pt-10 px-4 container">
+    <section className="pt-20 px-4 container">
       <h1 className="my-10">About Page</h1>
       <p className="mt-10">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias saepe
