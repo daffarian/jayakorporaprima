@@ -38,9 +38,8 @@ export default async function Page() {
   const posts = await fetchPosts();
 
   return (
-    <div className="container px-4 mt-10">
+    <div className="container px-4 mt-20">
       <ButtonCreate />
-
       <div className="py-10 flex flex-col flex-wrap sm:flex-row gap-5">
         {posts.length > 0 ? (
           posts.map((post: Article) => (
@@ -59,7 +58,7 @@ export default async function Page() {
           ))
         ) : (
           <div>
-            <p className='text-center font-semibold'>Empty note</p>
+            <p className="text-center font-semibold">Empty note</p>
           </div>
         )}
       </div>
