@@ -9,6 +9,7 @@ export default function Header() {
   const [clientWindowHeight, setClientWindowHeight] = useState(0);
   const [style, setStyle] = useState('');
   const pathname = usePathname();
+  const position = pathname === '/' ? 'absolute' : 'static';
 
   const handleScroll = () => {
     setClientWindowHeight(window.scrollY);
@@ -20,14 +21,17 @@ export default function Header() {
   });
 
   useEffect(() => {
-    if (clientWindowHeight > 300) {
+    if (clientWindowHeight > 400) {
       setStyle('bg-white shadow-xl fixed animate-slide-down');
     } else {
-      setStyle('bg-transparent shadow-none absolute');
+      setStyle(`bg-transparent shadow-none ${position}`);
     }
-  }, [clientWindowHeight]);
+  }, [clientWindowHeight, position]);
+
   return (
-    <header className={`w-full top-0 z-[2] ${style} transition-all`}>
+    <header
+      className={`w-full top-0 z-[2] ${style} transition-all`}
+    >
       <div className="container py-2 px-4 sm:px-0 lg:py-4 w-full flex flex-row justify-between items-center">
         <Authors />
         <nav>
