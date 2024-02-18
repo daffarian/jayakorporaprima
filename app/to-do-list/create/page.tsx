@@ -1,6 +1,8 @@
 import { Button } from '@/components/ui/button';
 import { submitTodo } from '@/lib/action';
 import Link from 'next/link';
+import { Suspense } from 'react';
+
 export default function Page() {
   return (
     <div className="flex flex-col py-10 px-4 container">
@@ -28,13 +30,15 @@ export default function Page() {
           ></textarea>
         </div>
         <div>
-          <Button
-            className="bg-primary hover:bg-primary mr-5"
-            variant={'default'}
-            type="submit"
-          >
-            Save
-          </Button>
+          <Suspense fallback={<div>Loading..</div>}>
+            <Button
+              className="bg-primary hover:bg-primary mr-5"
+              variant={'default'}
+              type="submit"
+            >
+              Save
+            </Button>
+          </Suspense>
           <Link href="/to-do-list">
             <Button variant="destructive" type="submit">
               Cancel
