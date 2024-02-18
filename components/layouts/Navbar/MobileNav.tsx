@@ -19,7 +19,7 @@ export default function MobileNav() {
   const pathname = usePathname();
   let iconMenu;
   if (pathname === '/') {
-    iconMenu = Icons.menuWhite;
+    iconMenu = Icons.menu;
   } else {
     iconMenu = Icons.menu;
   }

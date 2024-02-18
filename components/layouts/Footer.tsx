@@ -24,7 +24,7 @@ export default function Footer(){
         </div>
         <div className="mt-10 text-center">
           <hr />
-          <p className="text-white mt-10">Copyright &copy; 2024 | PT Jaya Korpora Prima | All Right Reserved</p>
+          <p className="text-white mt-10">Copyright &copy; 2024 | PT Jaya Korpora Prima | All Rights Reserved</p>
         </div>
       </div>
     </footer>
