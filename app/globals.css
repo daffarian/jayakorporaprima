@@ -13,13 +13,13 @@
     @apply font-bold text-neutral-800;
   }
   p {
-    @apply text-neutral-800;
+    @apply text-neutral-800 font-medium;
   }
 
   ul {
-    @apply font-medium;
+    @apply font-medium text-neutral-800;
   }
   li {
-    @apply font-medium;
+    @apply font-medium text-neutral-800;
   }
 }
