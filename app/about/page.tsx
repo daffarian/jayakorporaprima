@@ -1,8 +1,7 @@
-import Loading from "../loading";
 export default function Page(){
   return (
     <>
-      <h1 className="">About Page</h1>
+      <h1 className="mt-96">About Page</h1>
     </>
   );
 }
