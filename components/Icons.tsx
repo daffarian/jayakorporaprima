@@ -8,6 +8,7 @@ import {
   PencilIcon,
   TrashIcon,
   Plus,
+  Loader2,
 } from 'lucide-react';
 const primary = '#004aad';
 export const Icons = {
@@ -18,9 +19,10 @@ export const Icons = {
   goto: <ChevronRight color={primary} />,
   gotoDark: <ChevronRight color={'white'} />,
   mail: <Mail color={primary} />,
-  pencil: <PencilIcon color={'white'}/>,
-  trash: <TrashIcon color={'white'}/>,
+  pencil: PencilIcon,
+  trash: TrashIcon,
   plus: <Plus color={'white'}/>,
+  loader: Loader2,
   whatsapp: (props: LucideProps) => (
     <svg
       fill={primary}

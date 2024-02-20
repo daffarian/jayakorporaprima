@@ -7,6 +7,7 @@ import dynamic from 'next/dynamic';
 const QuillEditor = dynamic(() => import('react-quill'), { ssr: false });
 import 'react-quill/dist/quill.snow.css'; // Import Quill styles
 import { quillFormats, quillModules } from '@/components/Editor';
+import { ButtonSubmit } from '@/components/Button';
 
 export default function EditForm(postById: any) {
   // State RichText
@@ -20,7 +21,10 @@ export default function EditForm(postById: any) {
 
   const updateTodoWithId = updateTodo.bind(null, postById.postById.id);
   return (
-    <form action={() => updateTodoWithId} className="flex flex-col gap-5">
+    <form
+      action={() => updateTodoWithId(title, content)}
+      className="flex flex-col gap-5"
+    >
       <div className="flex flex-col gap-1">
         <label htmlFor="title" className="font-medium">
           Title
@@ -47,14 +51,8 @@ export default function EditForm(postById: any) {
           className="w-full h-[70%] bg-white block"
         />
       </div>
-      <div>
-        <Button
-          className="bg-primary hover:bg-primary mr-5 hover:brightness-75"
-          variant={'default'}
-          type="submit"
-        >
-          Save
-        </Button>
+      <div className="inline-flex gap-5">
+        <ButtonSubmit />
         <Link href="/to-do-list">
           <Button variant="destructive" className="hover:brightness-75">
             Cancel

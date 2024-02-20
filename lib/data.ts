@@ -9,7 +9,7 @@ export async function fetchPosts() {
     return posts;
   } catch (error) {
     console.error(error);
-    console.error('gagal');
+    console.error('Failed to fetch');
   }
 }
 

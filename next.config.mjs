@@ -9,6 +9,11 @@ const nextConfig = {
         pathname: '/collection/1163637/480x480'
       }
     ]
+  },
+  experimental: {
+    serverActions: {
+      bodySizeLimit: '10mb'
+    }
   }
 };
 

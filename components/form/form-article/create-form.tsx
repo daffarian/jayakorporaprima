@@ -7,6 +7,8 @@ import { useState } from 'react';
 import dynamic from 'next/dynamic';
 const QuillEditor = dynamic(() => import('react-quill'), { ssr: false });
 import 'react-quill/dist/quill.snow.css'; // Import Quill styles
+import { useFormStatus } from 'react-dom';
+import { ButtonSubmit } from '@/components/Button';
 
 export default function CreateForm() {
   // State RichText
@@ -32,7 +34,7 @@ export default function CreateForm() {
           name="title"
           type="text"
           className="p-1 border-[1px] border-zinc-500"
-          onChange={(event:any) => setTitle(event.target.value)}
+          onChange={(event: any) => setTitle(event.target.value)}
           required
         />
       </div>
@@ -49,14 +51,8 @@ export default function CreateForm() {
           className="w-full h-[70%] bg-white block"
         />
       </div>
-      <div>
-        <Button
-          className="bg-primary text-white hover:text-white hover:bg-primary/90 mr-5"
-          variant={'ghost'}
-          type="submit"
-        >
-          Save
-        </Button>
+      <div className="inline-flex gap-5">
+        <ButtonSubmit />
         <Link href="/to-do-list">
           <Button variant="destructive" type="submit">
             Cancel

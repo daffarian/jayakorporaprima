@@ -1,10 +1,10 @@
-'use server'
+'use server';
 import { revalidatePath } from 'next/cache';
 import { redirect } from 'next/navigation';
 import prisma from './prisma';
 
-export async function submitTodo(titleInput:any, editorContent: any) {
-  const title = titleInput
+export async function submitTodo(titleInput: any, editorContent: any) {
+  const title = titleInput;
   const content = editorContent;
 
   await prisma.post.create({
@@ -14,13 +14,15 @@ export async function submitTodo(titleInput:any, editorContent: any) {
     }
   });
 
+  
+
   revalidatePath('/to-do-list/');
   redirect('/to-do-list/');
 }
 
-export async function updateTodo(id: string, formData: FormData, e: any) {
-  const title = formData.get('title');
-  const content = formData.get('content');
+export async function updateTodo(id:string, titleInput: any, editorContent: any) {
+  const title = titleInput;
+  const content = editorContent;
 
   await prisma.post.update({
     where: {
@@ -36,7 +38,7 @@ export async function updateTodo(id: string, formData: FormData, e: any) {
   redirect('/to-do-list/');
 }
 
-export async function deleteTodo(id: number) {
+export async function deleteTodo(id: any) {
   await prisma.post.delete({
     where: {
       id
