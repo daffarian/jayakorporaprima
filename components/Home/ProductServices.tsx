@@ -9,7 +9,7 @@ import {
   CarouselPrevious
 } from '@/components/ui/carousel';
 import GoTo from '../GoTo';
-import { productAndService } from '@/lib/data';
+import { productAndService } from '@/lib/data-object';
 import { Separator } from '@/components/ui/separator';
 
 export default function ProductServices() {

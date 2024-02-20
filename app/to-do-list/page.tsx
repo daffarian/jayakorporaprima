@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { Icons } from '@/components/Icons';
 import { deleteTodo } from '@/lib/action';
 
+
 function ButtonCreate() {
   return (
     <Link
@@ -52,7 +53,7 @@ export default async function Page() {
               <div className="flex flex-row justify-between gap-5">
                 <div>
                   <h3 className="text-primary text-lg mb-3">{post.title}</h3>
-                  <p>{post.content}</p>
+                  <div className='prose' dangerouslySetInnerHTML={{__html:post.content}}></div>
                 </div>
                 <div className="flex flex-col lg:flex-row gap-2 items-center justify-center p-2">
                   <ButtonEdit id={post.id} />

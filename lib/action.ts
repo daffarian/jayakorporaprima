@@ -1,11 +1,11 @@
-'use server';
+'use server'
 import { revalidatePath } from 'next/cache';
 import { redirect } from 'next/navigation';
 import prisma from './prisma';
 
-export async function submitTodo(formData: FormData) {
-  const title = formData.get('title');
-  const content = formData.get('content');
+export async function submitTodo(titleInput:any, editorContent: any) {
+  const title = titleInput
+  const content = editorContent;
 
   await prisma.post.create({
     data: {
@@ -18,7 +18,7 @@ export async function submitTodo(formData: FormData) {
   redirect('/to-do-list/');
 }
 
-export async function updateTodo(id: string, formData: FormData) {
+export async function updateTodo(id: string, formData: FormData, e: any) {
   const title = formData.get('title');
   const content = formData.get('content');
 

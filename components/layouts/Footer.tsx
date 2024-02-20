@@ -1,5 +1,5 @@
 import Authors from "../Authors"
-import { footerLink } from "@/lib/data"
+import { footerLink } from "@/lib/data-object"
 import Link from "next/link"
 export default function Footer(){
   return (
