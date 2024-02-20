@@ -23,13 +23,13 @@ export function ButtonSubmit() {
 
 // Button Delete
 export function ButtonDelete({ id }: { id: number }) {
-  const status = useFormStatus();
   const deleteTodoWithId = deleteTodo.bind(null, id);
+  const status = useFormStatus();
   return (
     <form action={deleteTodoWithId}>
       <button className="bg-red-500 p-2 rounded-md hover:brightness-75">
         {status.pending === true ? (
-          <Icons.loader className="animate-spin" />
+          <Icons.loader className="animate-spin" color='white' />
         ) : (
           <Icons.trash color="white" />
         )}

@@ -15,7 +15,7 @@ import { Separator } from '@/components/ui/separator';
 export default function ProductServices() {
   return (
     <section
-      className="bg-cover "
+      className="bg-cover prose"
       style={{
         backgroundImage:
           'url("/background/home-product-service-background.svg")'

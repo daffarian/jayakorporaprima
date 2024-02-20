@@ -1,7 +1,7 @@
 export default function Page() {
   return (
-    <section className="pt-20 px-4 container">
-      <h1 className="my-10">About Page</h1>
+    <section className="pt-20 px-4 container prose">
+      <h1 className="my-10 text-primary">About Page</h1>
       <p className="mt-10">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias saepe
         esse ipsum, minima voluptatem laboriosam impedit veniam atque vitae

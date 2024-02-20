@@ -16,11 +16,8 @@ function ButtonCreate() {
   );
 }
 
-
-
 export default async function Page() {
   const posts = await fetchPosts();
- 
 
   // posts.map((post: any) => {
   //   post;

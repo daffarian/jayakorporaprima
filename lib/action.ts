@@ -44,5 +44,6 @@ export async function deleteTodo(id: any) {
       id
     }
   });
-  revalidatePath('/dashboard/invoices');
+  revalidatePath('/to-do-list/');
+  redirect('/to-do-list/');
 }
