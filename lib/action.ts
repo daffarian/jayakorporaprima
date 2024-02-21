@@ -8,7 +8,7 @@ export async function submitTodo(titleInput: any, editorContent: any) {
   const title = titleInput;
   const content = editorContent;
 
-  (await db).query(`INSERT INTO todolist (title, content) VALUES ("${title}", "${content}")`);
+  (await db).query(`INSERT INTO todolist (title, content) VALUES ('${title}', '${content}')`);
 
   revalidatePath('/to-do-list/');
   redirect('/to-do-list/');

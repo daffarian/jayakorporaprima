@@ -17,8 +17,8 @@ export default async function Page() {
           posts?.map((post: Todo) => (
             <Card key={post.id} className="p-5 shadow-xl w-full">
               <div className="flex flex-row justify-between gap-5">
-                <div>
-                  <h3 className="text-primary text-lg mb-3">{post.title}</h3>
+                <div className='w-full'>
+                  <h3 className="text-primary w-full text-lg mb-3">{post.title}</h3>
                   <div
                     className="prose"
                     dangerouslySetInnerHTML={{ __html: post.content }}
