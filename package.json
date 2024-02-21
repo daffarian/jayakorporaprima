@@ -27,6 +27,7 @@
     "embla-carousel-autoplay": "^8.0.0-rc22",
     "embla-carousel-react": "^8.0.0-rc22",
     "lucide-react": "^0.323.0",
+    "mysql2": "^3.9.1",
     "next": "14.1.0",
     "react": "^18",
     "react-dom": "^18",
@@ -37,7 +38,7 @@
     "zod": "^3.22.4"
   },
   "devDependencies": {
-    "@types/node": "^20",
+    "@types/node": "^20.11.19",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "autoprefixer": "^10.0.1",
