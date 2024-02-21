@@ -3,6 +3,8 @@ import { useFormStatus } from 'react-dom';
 import { Icons } from './Icons';
 import { deleteTodo } from '@/lib/action';
 import Link from 'next/link';
+import { useState } from 'react';
+
 // Button submit form
 export function ButtonSubmit() {
   const status = useFormStatus();
@@ -23,13 +25,16 @@ export function ButtonSubmit() {
 
 // Button Delete
 export function ButtonDelete({ id }: { id: number }) {
+  const [load, setLoad] = useState(false);
   const deleteTodoWithId = deleteTodo.bind(null, id);
-  const status = useFormStatus();
   return (
     <form action={deleteTodoWithId}>
-      <button className="bg-red-500 p-2 rounded-md hover:brightness-75">
-        {status.pending === true ? (
-          <Icons.loader className="animate-spin" color='white' />
+      <button
+        onClick={() => setLoad(true)}
+        className="bg-red-500 p-2 rounded-md hover:brightness-75"
+      >
+        {load === true ? (
+          <Icons.loader className="animate-spin" color="white" />
         ) : (
           <Icons.trash color="white" />
         )}
@@ -40,17 +45,38 @@ export function ButtonDelete({ id }: { id: number }) {
 
 // Button Edit
 export function ButtonEdit({ id }: { id: any }) {
-  const status = useFormStatus();
+  const [load, setLoad] = useState(false);
   return (
-    <Link
-      href={`/to-do-list/${id}/edit`}
-      className="bg-primary p-2 rounded-md hover:brightness-75"
-    >
-      {status.pending === true ? (
-        <Icons.loader className="animate-spin" />
-      ) : (
-        <Icons.pencil color="white" />
-      )}
-    </Link>
+    <button onClick={() => setLoad(true)}>
+      <Link
+        href={`/to-do-list/${id}/edit`}
+        className="bg-primary p-2 rounded-md inline-flex hover:brightness-75"
+      >
+        {load === true ? (
+          <Icons.loader className="animate-spin" color="white" />
+        ) : (
+          <Icons.pencil color="white" />
+        )}
+      </Link>
+    </button>
+  );
+}
+
+// Button Create
+export function ButtonCreate() {
+  const [load, setLoad] = useState(false);
+  return (
+    <button onClick={() => setLoad(true)}>
+      <Link
+        href={'/to-do-list/create'}
+        className=" bg-primary p-2 rounded-md inline-flex hover:brightness-75"
+      >
+        {load === true ? (
+          <Icons.loader className="animate-spin" color="white" />
+        ) : (
+          <Icons.plus color="white" />
+        )}
+      </Link>
+    </button>
   );
 }

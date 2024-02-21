@@ -1,23 +1,10 @@
 import { fetchPosts } from '@/lib/data';
 import { Card } from '@/components/ui/card';
 import { Todo } from '@/lib/definitions';
-import Link from 'next/link';
-import { Icons } from '@/components/Icons';
-import { ButtonDelete, ButtonEdit } from '@/components/Button';
-
-function ButtonCreate() {
-  return (
-    <Link
-      href={'/to-do-list/create'}
-      className=" bg-primary p-2 rounded-md inline-flex hover:brightness-75"
-    >
-      {Icons.plus}
-    </Link>
-  );
-}
+import { ButtonDelete, ButtonEdit, ButtonCreate } from '@/components/Button';
 
 export default async function Page() {
-  const posts = await fetchPosts();
+  const posts: any = await fetchPosts();
 
   // posts.map((post: any) => {
   //   post;
@@ -39,7 +26,7 @@ export default async function Page() {
                 </div>
                 <div className="flex flex-col lg:flex-row gap-2 items-center justify-center p-2">
                   <ButtonEdit id={post.id} />
-                  <ButtonDelete id={post.id} />
+                  <ButtonDelete key={post.id} id={post.id} />
                 </div>
               </div>
             </Card>

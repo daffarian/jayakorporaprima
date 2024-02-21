@@ -21,7 +21,7 @@ export const Icons = {
   mail: <Mail color={primary} />,
   pencil: PencilIcon,
   trash: TrashIcon,
-  plus: <Plus color={'white'}/>,
+  plus: Plus,
   loader: Loader2,
   whatsapp: (props: LucideProps) => (
     <svg

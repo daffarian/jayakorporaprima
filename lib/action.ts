@@ -23,7 +23,7 @@ export async function updateTodo(
   const content = editorContent;
 
   (await db).query(
-    `UPDATE todolist SET title = ${title}, content = ${content} WHERE id = ${id}`
+    `UPDATE todolist SET title = '${title}', content = '${content}' WHERE id = ${id}`
   );
 
 
@@ -32,11 +32,9 @@ export async function updateTodo(
 }
 
 export async function deleteTodo(id: any) {
-  await prisma.post.delete({
-    where: {
-      id
-    }
-  });
+  (await db).query(
+    `DELETE FROM todolist WHERE id = ${id}`
+  );
   revalidatePath('/to-do-list/');
   redirect('/to-do-list/');
 }

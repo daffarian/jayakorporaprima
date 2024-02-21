@@ -6,7 +6,7 @@ import { db } from './db';
 export async function fetchPosts() {
   noStore();
   try {
-    const [posts, fields] = await (await db).execute('SELECT * FROM todolist');
+    const [posts, fields] = await (await db).execute(`SELECT * FROM todolist`);
     return posts;
   } catch (error) {
     console.error(error);
@@ -18,9 +18,12 @@ export async function fetchPosts() {
 export async function fetchPostById(id: number) {
   noStore();
   try {
-    const postById = (await db).execute(`SELECT * FROM todolist WHERE id = ${id}`)
+    const [postById, fields] = await (
+      await db
+    ).execute(`SELECT * FROM todolist WHERE id = "${id}"`);
     return postById;
   } catch (error) {
     console.error(error);
+    console.error('Failed to fetch by id');
   }
 }
