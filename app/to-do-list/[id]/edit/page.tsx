@@ -4,7 +4,7 @@ export default async function Page({ params }: { params: { id: string } }) {
   const id = parseInt(params.id);
   const [postById]:any = await fetchPostById(id);
   return (
-    <div className="flex flex-col py-20 px-4 container">
+    <div className="flex flex-col py-20 container">
       <EditForm postById={postById}></EditForm>
     </div>
   );

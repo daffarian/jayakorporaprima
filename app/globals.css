@@ -10,7 +10,7 @@
     @apply font-bold text-4xl text-primary;
   }
   h3 {
-    @apply font-bold text-3xl text-primary;
+    @apply font-bold text-xl;
   }
   p {
     @apply text-neutral-800 font-medium leading-relaxed;

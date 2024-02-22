@@ -29,7 +29,7 @@ export default function Page() {
   }
 
   return (
-    <section className="px-4 pt-20 container min-h-svh">
+    <section className="pt-20 container min-h-svh">
       <h1>Upload File</h1>
       <form action={upload} className="mt-10 flex flex-col gap-10 p-5">
         {/* <Image alt={'tes'} width={50} height={50} src={`${path}`}/> */}

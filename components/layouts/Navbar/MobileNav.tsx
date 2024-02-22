@@ -27,9 +27,9 @@ export default function MobileNav() {
     <div className="lg:hidden">
       <Sheet open={isOpen} onOpenChange={setIsOpen}>
         <SheetTrigger asChild>
-          <Button variant="ghost" className="hover:bg-transparent">
+          <span className="hover:bg-transparent cursor-pointer">
             {iconMenu}
-          </Button>
+          </span>
         </SheetTrigger>
         <SheetContent>
           <div>

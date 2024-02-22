@@ -10,7 +10,7 @@ export default async function Page() {
   //   post;
   // });
   return (
-    <div className="container px-4 pt-20">
+    <div className="container pt-20">
       <ButtonCreate />
       <div className="py-10 grid grid-cols-1 sm:grid-cols-2 place-items-start gap-5">
         {posts?.length > 0 ? (

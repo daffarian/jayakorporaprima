@@ -22,7 +22,7 @@ export default function ProductServices() {
       }}
     >
       <div className="bg-gradient-to-t lg:container gap-4 from-white via-white py-10 flex flex-col md:flex-row">
-        <div className="container px-4 min-w-[20rem]">
+        <div className="container min-w-[20rem]">
           <h2 className="my-10">Products & Services</h2>
           <p className="max-w-md">
             We provide reliable security and access control system solutions for

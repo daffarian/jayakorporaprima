@@ -1,6 +1,6 @@
 export default function Page() {
   return (
-    <section className="pt-20 container px-4">
+    <section className="pt-20 container">
       <h1 className="my-10 text-primary">Contact Page</h1>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae expedita
