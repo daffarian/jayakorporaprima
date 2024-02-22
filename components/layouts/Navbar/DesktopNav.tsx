@@ -35,7 +35,7 @@ const components: { title: string; href: string }[] = [
 export default function DesktopNav() {
   const pathname = usePathname();
   return (
-    <div className="hidden lg:flex lg:justify-between mx-auto">
+    <div className="hidden lg:flex lg:justify-between container">
       <NavigationMenu>
         <NavigationMenuList>
           <NavigationMenuItem

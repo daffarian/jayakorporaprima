@@ -33,7 +33,7 @@ export default function ProductServices() {
           <GoTo link="product-&-service">More</GoTo>
         </div>
         {/* Carousel */}
-        <div className="flex justify-center mt-5 lg:mt-0 lg:px-4 lg:py-10 md:max-w-[25rem] lg:max-w-[48rem]">
+        <div className="flex justify-center mt-5 lg:mt-0 lg:py-10 md:max-w-[25rem] lg:max-w-[48rem]">
           <Carousel
             className="w-full flex items-center"
             plugins={[
