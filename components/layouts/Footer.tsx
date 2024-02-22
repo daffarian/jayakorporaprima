@@ -3,7 +3,7 @@ import { footerLink } from "@/lib/data-object"
 import Link from "next/link"
 export default function Footer(){
   return (
-    <footer className="bg-secondary rounded-t-[70px]">
+    <footer className="bg-secondary">
       <div className="container px-4 pt-10 pb-5">
         <Authors />
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 mt-10">
