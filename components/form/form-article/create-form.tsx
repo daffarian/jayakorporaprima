@@ -7,7 +7,6 @@ import { useState } from 'react';
 import dynamic from 'next/dynamic';
 const QuillEditor = dynamic(() => import('react-quill'), { ssr: false });
 import 'react-quill/dist/quill.snow.css'; // Import Quill styles
-import { useFormStatus } from 'react-dom';
 import { ButtonSubmit } from '@/components/Button';
 
 export default function CreateForm() {
@@ -52,7 +51,7 @@ export default function CreateForm() {
         />
       </div>
       <div className="inline-flex gap-5">
-        <ButtonSubmit />
+        <ButtonSubmit>Save</ButtonSubmit>
         <Link href="/to-do-list">
           <Button variant="destructive" type="submit">
             Cancel

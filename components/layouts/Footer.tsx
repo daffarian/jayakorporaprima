@@ -3,8 +3,8 @@ import { footerLink } from "@/lib/data-object"
 import Link from "next/link"
 export default function Footer(){
   return (
-    <footer className="bg-secondary">
-      <div className="container px-4 py-10">
+    <footer className="bg-secondary rounded-t-[70px]">
+      <div className="container px-4 pt-10 pb-5">
         <Authors />
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 mt-10">
           {footerLink.map((items) => (
@@ -16,15 +16,15 @@ export default function Footer(){
                   key={item.id}
                   href={item.link}
                 >
-                  <li className="text-neutral-200">{item.name}</li>
+                  <li className="text-neutral-400">{item.name}</li>
                 </Link>
               ))}
             </ul>
           ))}
         </div>
-        <div className="mt-10 text-center">
-          <hr />
-          <p className="text-white mt-10">Copyright &copy; 2024 | PT Jaya Korpora Prima | All Rights Reserved</p>
+        <div className="mt-5 text-center">
+          <hr className="border-neutral-400" />
+          <p className="text-neutral-400 mt-5">Copyright &copy; 2024 | PT Jaya Korpora Prima | All Rights Reserved</p>
         </div>
       </div>
     </footer>

@@ -23,7 +23,7 @@ const config = {
       // },
       colors: {
         primary: '#004aad',
-        secondary: '#001634'
+        secondary: '#000f24' //'#001634'
       },
       keyframes: {
         'accordion-down': {

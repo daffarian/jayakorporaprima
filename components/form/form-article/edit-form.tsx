@@ -52,7 +52,7 @@ export default function EditForm(postById: any) {
         />
       </div>
       <div className="inline-flex gap-5">
-        <ButtonSubmit />
+        <ButtonSubmit>Save</ButtonSubmit>
         <Link href="/to-do-list">
           <Button variant="destructive" className="hover:brightness-75">
             Cancel

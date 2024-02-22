@@ -3,10 +3,10 @@ import { useFormStatus } from 'react-dom';
 import { Icons } from './Icons';
 import { deleteTodo } from '@/lib/action';
 import Link from 'next/link';
-import { useState } from 'react';
+import { ReactNode, useState } from 'react';
 
 // Button submit form
-export function ButtonSubmit() {
+export function ButtonSubmit(props: { children?: React.ReactNode }) {
   const status = useFormStatus();
   return (
     <button
@@ -17,7 +17,7 @@ export function ButtonSubmit() {
       {status.pending === true ? (
         <Icons.loader className="animate-spin" />
       ) : (
-        'Save'
+        props.children
       )}
     </button>
   );
