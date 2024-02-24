@@ -1,7 +1,7 @@
 export const productAndService = [
   {
     id: 'pas-1',
-    title: 'Business and Project Consultant',
+    title: 'Business Consultant',
     description:
       'Consult on your business and project problems and find comprehensive solutions with us',
     image: '12',

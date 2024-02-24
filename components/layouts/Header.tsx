@@ -31,7 +31,7 @@ export default function Header() {
     <header
       className={`w-full top-0 z-[10] ${style} transition-all`}
     >
-      <div className="container py-4 lg:py-4 w-full flex flex-row justify-between items-center">
+      <div className="container px-3 py-4 lg:py-4 w-full flex flex-row justify-between items-center">
         <Authors />
         <nav>
           <DesktopNav />
