@@ -12,6 +12,9 @@
   h3 {
     @apply font-semibold text-xl;
   }
+  h4 {
+    @apply font-semibold text-xl;
+  }
   p {
     @apply text-neutral-800 font-medium leading-relaxed;
   }
