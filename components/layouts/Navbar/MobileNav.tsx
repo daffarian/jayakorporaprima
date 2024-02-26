@@ -60,7 +60,7 @@ export default function MobileNav() {
             <AccordionItem value="item-1">
               <AccordionTrigger>Product & Service</AccordionTrigger>
               <AccordionContent>
-                Business and Project Consultant
+                Business Consultant
               </AccordionContent>
               <AccordionContent>Parking Solution</AccordionContent>
               <AccordionContent>Security System Solution</AccordionContent>

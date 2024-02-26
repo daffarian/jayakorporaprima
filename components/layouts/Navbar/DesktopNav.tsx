@@ -39,7 +39,7 @@ export default function DesktopNav() {
       <NavigationMenu>
         <NavigationMenuList>
           <NavigationMenuItem
-            className={clsx({ 'text-white': pathname === '/' })}
+            className={clsx({ 'text-neutral-800': pathname === '/' })}
           >
             <Link href="/" legacyBehavior passHref>
               <NavigationMenuLink className={`${navigationMenuTriggerStyle()}`}>
@@ -51,7 +51,7 @@ export default function DesktopNav() {
             <Link href="/about" legacyBehavior passHref>
               <NavigationMenuLink
                 className={`${navigationMenuTriggerStyle()} ${clsx({
-                  'text-white': pathname === '/'
+                  'text-neutral-800': pathname === '/'
                 })}`}
               >
                 About Us
@@ -60,7 +60,7 @@ export default function DesktopNav() {
           </NavigationMenuItem>
           <NavigationMenuItem>
             <NavigationMenuTrigger
-              className={clsx({ 'text-white': pathname === '/' })}
+              className={clsx({ 'text-neutral-800': pathname === '/' })}
             >
               Product & Services
             </NavigationMenuTrigger>
@@ -81,7 +81,7 @@ export default function DesktopNav() {
             <Link href="/contact" legacyBehavior passHref>
               <NavigationMenuLink
                 className={`${navigationMenuTriggerStyle()} ${clsx({
-                  'text-white': pathname === '/'
+                  'text-neutral-800': pathname === '/'
                 })}`}
               >
                 Contact
