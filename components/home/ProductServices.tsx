@@ -32,16 +32,17 @@ export default function ProductServices() {
             Business Consultant
           </h3>
           <div className="mt-10 grid grid-cols-1 lg:grid-cols-2 place-items-center lg:px-4">
+            <p className="text-center px-4">
+              Consult on your business and project problems and find
+              comprehensive solutions with us
+            </p>
             <Image
               src={'/images/decoration/handshake.jpg'}
               width={500}
               height={100}
               alt="Business Consultant"
+              className='mt-10'
             />
-            <p className="text-center mt-10 px-4">
-              Consult on your business and project problems and find
-              comprehensive solutions with us
-            </p>
           </div>
         </div>
         {/* Parking Solution */}
@@ -96,16 +97,17 @@ export default function ProductServices() {
             Security System
           </h3>
           <div className="mt-10 grid grid-cols-1 lg:grid-cols-2 place-items-center lg:px-4">
+            <p className="text-center px-4">
+              We have a wide range of security tools & equipment to ensure
+              maximum security
+            </p>
             <Image
               src={'/images/decoration/security-system.jpg'}
               width={500}
               height={100}
               alt="Security System"
+              className='mt-10'
             />
-            <p className="text-center mt-10 px-4">
-              We have a wide range of security tools & equipment to ensure
-              maximum security
-            </p>
           </div>
         </div>
         {/* Access Control System */}
@@ -114,15 +116,16 @@ export default function ProductServices() {
             Access Control System
           </h3>
           <div className="mt-10 grid grid-cols-1 lg:grid-cols-2 place-items-center lg:px-4">
+            <p className="text-center px-4">
+              Latest & advanced tools & equipment for your access control needs
+            </p>
             <Image
               src={'/images/decoration/access-control-system.jpg'}
               width={500}
               height={100}
               alt="Access Control System"
+              className='mt-10'
             />
-            <p className="text-center mt-10 px-4">
-              Latest & advanced tools & equipment for your access control needs
-            </p>
           </div>
         </div>
       </div>
