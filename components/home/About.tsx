@@ -6,7 +6,7 @@ export default function About(){
       <Image className="" src={'/background/home-about-background.svg'} width={500} height={200} alt="id"/>
       <div className="container py-10">
         <h2 className="py-10 text-white">About Us</h2>
-        <p className="text-neutral-200">
+        <p className="text-slate-200">
           We are an experienced and passionate team focused on security,
           accessibility and convenience. We understand that every businesses
           have their own unique challenges and needs, and we are ready provide

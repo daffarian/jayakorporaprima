@@ -16,17 +16,17 @@
     @apply font-semibold text-2xl;
   }
   p {
-    @apply text-neutral-500 font-semibold leading-relaxed;
+    @apply text-slate-800 font-semibold leading-relaxed;
   }
 
   ul {
-    @apply font-semibold text-neutral-500;
+    @apply font-semibold text-slate-800;
   }
   li {
-    @apply font-semibold text-neutral-500;
+    @apply font-semibold text-slate-800;
   }
   a {
-    @apply font-semibold text-neutral-500;
+    @apply font-semibold text-slate-800;
   }
 }
 
