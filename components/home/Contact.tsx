@@ -8,7 +8,7 @@ export default function Contact() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
           <address className="grid grid-cols-1 gap-5 order-last lg:order-1 not-italic">
             <div>
-              <h3>Operational hour </h3>
+              <h3 className="text-xl">Operational hour </h3>
               <ul className="list-disc pl-5 text-neutral-800 mt-2 font-medium">
                 <li>Monday - Friday : 8:00 AM - 5:00 PM</li>
                 <li>Saturday & Sunday : Closed</li>
@@ -18,11 +18,11 @@ export default function Contact() {
 
             {/* Address */}
             <div>
-              <h3>Office Address</h3>
+              <h3 className="text-xl">Office Address</h3>
               <a
-                className="text-neutral-800 mt-2 font-medium hover:underline"
+                className="mt-2 hover:underline"
                 href="https://maps.app.goo.gl/YzyeqtGYVy3FTRvC7"
-                target='_blank'
+                target="_blank"
               >
                 The Mansion Office Fontana, Lantai 17 Unit BF-17 B2, Jln.
                 Trembesi, Pademangan TImur - Pademangan, Jakarta - 14410
@@ -30,9 +30,9 @@ export default function Contact() {
             </div>
             {/* Wa Business */}
             <div>
-              <h3>Whatsapp Business</h3>
+              <h3 className="text-xl">Whatsapp Business</h3>
               <a
-                className="text-blue-600 font-medium mt-2 hover:underline inline-flex flex-row gap-2 items-center"
+                className="text-blue-600 mt-2 hover:underline inline-flex flex-row gap-2 items-center"
                 href="https://wa.me/6285771679611"
               >
                 <Icons.whatsapp className="" />
@@ -40,9 +40,9 @@ export default function Contact() {
               </a>
             </div>
             <div>
-              <h3>Email</h3>
+              <h3 className="text-xl">Email</h3>
               <a
-                className="text-blue-600 font-medium mt-2 hover:underline inline-flex flex-row gap-2 item-center"
+                className="text-blue-600  mt-2 hover:underline inline-flex flex-row gap-2 item-center"
                 href="mailto:info@jayakorporaprima.co.id"
               >
                 {Icons.mail}info@jayakorporaprima.co.id

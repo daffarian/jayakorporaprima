@@ -1,6 +1,5 @@
 import * as React from 'react';
 import Image from 'next/image';
-import { Icons } from '../Icons';
 export default function ProductServices() {
   return (
     <section>
@@ -56,7 +55,7 @@ export default function ProductServices() {
           </p>
           {/* Sub Parking */}
           <div className="px-4 mt-5 grid grid-cols-1 gap-5">
-            <div className="p-5 rounded-xl shadow-xl border-[1px] bg-blue-50 border-neutral-200">
+            <div className="p-5 rounded-xl shadow-xl border-[1px] bg-blue-100 border-neutral-200">
               {/* <Icons.service className="w-20" /> */}
               <h4 className="text-primary mt-5">Parking Management Service</h4>
               <p className="mt-5">
@@ -71,7 +70,7 @@ export default function ProductServices() {
                 className="mt-10 rounded-md"
               />
             </div>
-            <div className="p-5 rounded-xl shadow-xl mt-10g border-[1px] bg-blue-50 border-neutral-200">
+            <div className="p-5 rounded-xl shadow-xl mt-10g border-[1px] bg-blue-100 border-neutral-200">
               {/* <Icons.tech className="w-20" /> */}
               <h4 className="text-primary mt-5">
                 The Best Parking Equipment & Supplies

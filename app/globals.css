@@ -4,26 +4,29 @@
 
 @layer base {
   h1 {
-    @apply font-semibold text-primary text-4xl;
+    @apply font-semibold text-primary text-5xl;
   }
   h2 {
-    @apply font-semibold text-3xl text-primary;
+    @apply font-semibold text-4xl text-primary;
   }
   h3 {
-    @apply font-semibold text-xl;
+    @apply font-semibold text-3xl;
   }
   h4 {
-    @apply font-semibold text-xl;
+    @apply font-semibold text-2xl;
   }
   p {
-    @apply text-neutral-800 font-medium leading-relaxed;
+    @apply text-neutral-500 font-semibold leading-relaxed;
   }
 
   ul {
-    @apply font-medium text-neutral-800;
+    @apply font-semibold text-neutral-500;
   }
   li {
-    @apply font-medium text-neutral-800;
+    @apply font-semibold text-neutral-500;
+  }
+  a {
+    @apply font-semibold text-neutral-500;
   }
 }
 
