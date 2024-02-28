@@ -91,6 +91,27 @@ export const footerLink = [
   },
   {
     id: 'fl-3',
+    title: 'Company',
+    links: [
+      {
+        id: 'fli-1',
+        name: 'History',
+        link: '/about'
+      },
+      {
+        id: 'fli-2',
+        name: 'Vision & Mission',
+        link: '/about'
+      },
+      {
+        id: 'fli-3',
+        name: 'Boc & BoD',
+        link: '/about'
+      },
+    ]
+  },
+  {
+    id: 'fl-4',
     title: 'Other',
     links: [
       {

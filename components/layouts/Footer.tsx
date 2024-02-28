@@ -12,11 +12,11 @@ export default function Footer(){
               <span className="text-white font-semibold">{items.title}</span>
               {items.links.map((item) => (
                 <Link
-                  className="text-neutral-200 hover:underline"
+                  className="text-slate-200 hover:underline"
                   key={item.id}
                   href={item.link}
                 >
-                  <li className="text-neutral-400">{item.name}</li>
+                  <li className="text-slate-400">{item.name}</li>
                 </Link>
               ))}
             </ul>

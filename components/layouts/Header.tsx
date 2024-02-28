@@ -21,7 +21,7 @@ export default function Header() {
 
   useEffect(() => {
     if (clientWindowHeight > 300) {
-      setStyle('bg-white shadow-xl fixed animate-slide-down text-neutral-800');
+      setStyle('bg-white/60 backdrop-blur-md shadow-lg fixed animate-slide-down text-neutral-800');
     } else {
       setStyle(`bg-transparent shadow-none absolute top-0 left-0 text-white`);
     }
@@ -31,7 +31,7 @@ export default function Header() {
     <header
       className={`w-full top-0 z-[10] ${style} transition-all`}
     >
-      <div className="container px-3 py-4 lg:py-4 w-full flex flex-row justify-between items-center">
+      <div className="container px-3 py-3 lg:py-4 w-full flex flex-row justify-between items-center">
         <Authors />
         <nav>
           <DesktopNav />
