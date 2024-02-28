@@ -56,12 +56,12 @@ export default function ProductServices() {
             </p>
             {/* Sub Parking */}
             <div className="px-4 mt-10 grid grid-cols-1 gap-5 lg:grid-cols-2">
-              <div className="p-5 rounded-xl border-[1px] bg-blue-50 border-neutral-200">
+              <div className="p-5 rounded-xl border-[1px] bg-secondary border-neutral-200">
                 {/* <Icons.service className="w-20" /> */}
                 <h4 className="text-primary mt-5">
                   Parking Management Service
                 </h4>
-                <p className="mt-5">
+                <p className="mt-5 text-slate-200">
                   Apart from providing parking solutions, we have an integrated
                   parking system network and manage parking in various locations
                 </p>
@@ -73,12 +73,12 @@ export default function ProductServices() {
                   className="mt-10 rounded-md"
                 />
               </div>
-              <div className="p-5 rounded-xl mt-10g border-[1px] bg-blue-50 border-neutral-200">
+              <div className="p-5 rounded-xl mt-10g border-[1px] bg-secondary border-neutral-200">
                 {/* <Icons.tech className="w-20" /> */}
                 <h4 className="text-primary mt-5">
                   The Best Parking Equipment & Supplies
                 </h4>
-                <p className="mt-5">
+                <p className="mt-5 text-slate-200">
                   Supported by the best equipment made in Europe & Asia, this
                   makes us a company that is ready to provide various kinds of
                   parking equipment & equipment needs
