@@ -2,7 +2,7 @@ import Image from "next/image"
 export default function Partners(){
   return (
     <section className="container py-10">
-      <h2 className="py-10 bg-gradient-to-r from-primary to-red-500 via-indigo-800 rounded-[2rem] px-4 text-transparent bg-clip-text">
+      <h2 className="py-10 bg-gradient-to-r from-primary to-red-500 via-indigo-500 rounded-[2rem] px-4 text-transparent bg-clip-text">
         {' '}
         Collaborating with strategic partners to expand market reach and
         increase competitiveness

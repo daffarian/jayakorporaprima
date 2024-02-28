@@ -25,9 +25,9 @@ export default function ProductServices() {
       </div>
       {/* Products And Services */}
       <div className="container">
-        <div className="py-10 rounded-[2rem] border-[1px] border-slate-200">
+        <div className="flex flex-col gap-10">
           {/* Business Consultant */}
-          <div className="flex flex-col ">
+          <div className="flex flex-col py-10 rounded-[2rem] border-[1px] border-slate-200">
             <h3 className="border-l-2 border-primary mx-auto inline-flex text-center px-4">
               Business Consultant
             </h3>
@@ -46,7 +46,7 @@ export default function ProductServices() {
             </div>
           </div>
           {/* Parking Solution */}
-          <div className="flex flex-col mt-20">
+          <div className="flex flex-col py-10 rounded-[2rem] border-[1px] border-slate-200">
             <h3 className="border-l-2 border-primary mx-auto inline-flex text-center px-4">
               Parking Solution
             </h3>
@@ -56,12 +56,12 @@ export default function ProductServices() {
             </p>
             {/* Sub Parking */}
             <div className="px-4 mt-10 grid grid-cols-1 gap-5 lg:grid-cols-2">
-              <div className="p-5 rounded-xl border-[1px] bg-blue-100 border-neutral-200">
+              <div className="p-5 rounded-xl border-[1px] bg-blue-50 border-neutral-200">
                 {/* <Icons.service className="w-20" /> */}
                 <h4 className="text-primary mt-5">
                   Parking Management Service
                 </h4>
-                <p className="mt-5">
+                <p className="mt-5 text-primary">
                   Apart from providing parking solutions, we have an integrated
                   parking system network and manage parking in various locations
                 </p>
@@ -73,12 +73,12 @@ export default function ProductServices() {
                   className="mt-10 rounded-md"
                 />
               </div>
-              <div className="p-5 rounded-xl mt-10g border-[1px] bg-blue-100 border-neutral-200">
+              <div className="p-5 rounded-xl mt-10g border-[1px] bg-blue-50 border-neutral-200">
                 {/* <Icons.tech className="w-20" /> */}
                 <h4 className="text-primary mt-5">
                   The Best Parking Equipment & Supplies
                 </h4>
-                <p className="mt-5 ">
+                <p className="mt-5 text-primary">
                   Supported by the best equipment made in Europe & Asia, this
                   makes us a company that is ready to provide various kinds of
                   parking equipment & equipment needs
@@ -94,7 +94,7 @@ export default function ProductServices() {
             </div>
           </div>
           {/* Security System */}
-          <div className="flex flex-col mt-20">
+          <div className="flex flex-col py-10 rounded-[2rem] border-[1px] border-slate-200">
             <h3 className="border-l-2 border-primary mx-auto inline-flex text-center px-4">
               Security System
             </h3>
@@ -113,7 +113,7 @@ export default function ProductServices() {
             </div>
           </div>
           {/* Access Control System */}
-          <div className="flex flex-col mt-20">
+          <div className="flex flex-col py-10 rounded-[2rem] border-[1px] border-slate-200">
             <h3 className="border-l-2 border-primary mx-auto inline-flex text-center px-4">
               Access Control System
             </h3>
