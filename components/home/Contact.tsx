@@ -45,7 +45,7 @@ export default function Contact() {
                 className="text-blue-600  mt-2 hover:underline inline-flex flex-row gap-2 item-center"
                 href="mailto:info@jayakorporaprima.co.id"
               >
-                {Icons.mail}info@jayakorporaprima.co.id
+                {Icons.mail}corporate@jayakorporaprima.co.id
               </a>
             </div>
           </address>

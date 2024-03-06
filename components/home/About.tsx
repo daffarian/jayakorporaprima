@@ -1,9 +1,17 @@
-import GoTo, { GotoDark } from "../GoTo";
-import Image from "next/image";
-export default function About(){
+'use client'
+import GoTo, { GotoDark } from '../GoTo';
+import { easeIn, motion } from 'framer-motion';
+import Image from 'next/image';
+export default function About() {
   return (
     <section className="pt-10 container ">
-      <div className=" bg-primary py-10 grid rounded-[2rem] roun grid-cols-1 md:grid-cols-2 place-items-center px-4">
+      <motion.div
+        initial={{ translateY: 100 }}
+        animate={{}}
+        transition={{duration: 1,ease: 'easeOut'}}
+        whileInView={{ translateY: 0 }}
+        className=" bg-primary py-10 grid rounded-[2rem] roun grid-cols-1 md:grid-cols-2 place-items-center px-4"
+      >
         <Image
           className=""
           src={'/background/home-about-background.svg'}
@@ -23,7 +31,7 @@ export default function About(){
           </p>
           <GotoDark link="about">More</GotoDark>{' '}
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }
