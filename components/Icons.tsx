@@ -10,7 +10,7 @@ import {
   Plus,
   Loader2
 } from 'lucide-react';
-const primary = '#004aad';
+const primary = '#0f294c';
 export const Icons = {
   menuWhite: <AlignRight color="white" />,
   menu: <AlignRight color={primary} />,

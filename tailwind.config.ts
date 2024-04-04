@@ -12,7 +12,7 @@ const config = {
   theme: {
     container: {
       center: true,
-      padding: '1rem',
+      padding: '1rem'
     },
     extend: {
       // container: {
@@ -23,8 +23,10 @@ const config = {
       //   }
       // },
       colors: {
-        primary: '#004aad',
-        secondary: '#000f24' //'#001634'
+        logo: '#004aad',
+        primary: '#0f294c', 
+        secondary: '#000f24', //'#001634'
+        accent: '#fdba1e'
       },
       keyframes: {
         'accordion-down': {

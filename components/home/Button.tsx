@@ -1,7 +1,8 @@
+import { Icons } from "../Icons";
 export default function Button() {
   return (
-    <button className="text-white px-3 py-2 bg-primary shadow-xl rounded-md border-[1px]">
-      <a href="https://wa.me/6285771679611" className="text-white">Contact Us</a>
+    <button className="px-3 py-2 bg-accent shadow-xl rounded-md">
+      <a href="https://wa.me/6285771679611" className="text-primary font-bold inline-flex flex-row-reverse items-center gap-2">{<Icons.whatsapp/>}Contact Us</a>
     </button>
   );
 }

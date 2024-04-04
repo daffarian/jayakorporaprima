@@ -9,7 +9,7 @@ export default function Authors() {
         width={40}
         height={40}
       ></Image>
-      <span className={`text-primary font-bold text-xl ${roboto.className}`}>
+      <span className={`text-logo font-bold text-xl ${roboto.className}`}>
         JAYA KORPORA PRIMA
       </span>
     </span>
