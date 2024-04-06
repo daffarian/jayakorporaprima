@@ -1,6 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
 'use client';
-import GoTo, { GotoDark } from '../GoTo';
 import Image from 'next/image';
 export default function About() {
   return (
@@ -23,15 +22,14 @@ export default function About() {
             className='mt-5'
           />
           <p className="mt-5">
-            PT. Jaya Korpora Prima (JKP) is a company engaged inparking
-            management services, parking equipment &technology, access control,
-            and integrated security system foryour property. We are also an
-            exclusive distributor of several parkingequipment, access control
+            PT. Jaya Korpora Prima (JKP) is a company engaged in parking
+            management services, parking equipment & technology, access control,
+            and integrated security system for your property. We are also an
+            exclusive distributor of several parking equipment, access control
             and security systems from theworld's leading group. Wherever your
             property is located, you will be supported by our extensive
             capability and expertise.
           </p>
-          <GotoDark link="about">More</GotoDark>{' '}
         </div>
       </div>
     </section>

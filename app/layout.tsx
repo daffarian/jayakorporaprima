@@ -16,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${quicksand.className}`}>
+      <body className={`${quicksand.className} bg-zinc-100`}>
         <Header />
         {children}
         <Footer />
