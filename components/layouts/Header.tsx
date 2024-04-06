@@ -21,7 +21,7 @@ export default function Header() {
 
   useEffect(() => {
     if (clientWindowHeight > 300) {
-      setStyle('bg-white/60 backdrop-blur-md shadow-lg fixed animate-slide-down text-neutral-800');
+      setStyle('bg-white drop-shadow-md fixed animate-slide-down text-neutral-800');
     } else {
       setStyle(`bg-transparent shadow-none absolute top-0 left-0 text-white`);
     }
