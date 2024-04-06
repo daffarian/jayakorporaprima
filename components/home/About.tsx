@@ -1,37 +1,39 @@
-'use client'
+/* eslint-disable react/no-unescaped-entities */
+'use client';
 import GoTo, { GotoDark } from '../GoTo';
-import { easeIn, motion } from 'framer-motion';
 import Image from 'next/image';
 export default function About() {
   return (
     <section className="pt-10 container ">
-      <motion.div
-        initial={{ translateY: 100 }}
-        animate={{}}
-        transition={{duration: 1,ease: 'easeOut'}}
-        whileInView={{ translateY: 0 }}
-        className=" bg-primary py-10 grid rounded-[2rem] roun grid-cols-1 md:grid-cols-2 place-items-center px-4"
-      >
+      <div className="pt-10 grid grid-cols-1 md:grid-cols-2 md:gap-10 place-items-center">
         <Image
           className=""
-          src={'/background/home-about-background.svg'}
+          src={'/images/decoration/decoration-1.jpg'}
           width={500}
           height={200}
           alt="id"
         />
         <div>
-          <h2 className="pt-10 text-white">About Us</h2>
-          <p className="text-slate-200 mt-5">
-            We are an experienced and passionate team focused on security,
-            accessibility and convenience. We understand that every businesses
-            have their own unique challenges and needs, and we are ready provide
-            the right solution for you. With that approach collaborative and
-            customer-oriented, we are determined to create solutions that meet
-            expectations and overcome challenges you face.
+          <h2 className="pt-10">ABOUT US</h2>
+          <Image
+            src={'/images/jkp-logo-2.png'}
+            alt="logo jkp"
+            width={200}
+            height={100}
+            className='mt-5'
+          />
+          <p className="mt-5">
+            PT. Jaya Korpora Prima (JKP) is a company engaged inparking
+            management services, parking equipment &technology, access control,
+            and integrated security system foryour property. We are also an
+            exclusive distributor of several parkingequipment, access control
+            and security systems from theworld's leading group. Wherever your
+            property is located, you will be supported by our extensive
+            capability and expertise.
           </p>
           <GotoDark link="about">More</GotoDark>{' '}
         </div>
-      </motion.div>
+      </div>
     </section>
   );
 }

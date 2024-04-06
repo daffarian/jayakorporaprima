@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { raleway } from '../components/fonts';
+import {quicksand } from '../components/fonts';
 import './globals.css';
 import Header from '@/components/layouts/Header';
 import Footer from '@/components/layouts/Footer';
@@ -16,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${raleway.className}`}>
+      <body className={`${quicksand.className}`}>
         <Header />
         {children}
         <Footer />

@@ -24,7 +24,7 @@ const config = {
       // },
       colors: {
         logo: '#004aad',
-        primary: '#0f294c', 
+        primary: '#0f294c',
         secondary: '#000f24', //'#001634'
         accent: '#fdba1e'
       },
@@ -51,7 +51,7 @@ const config = {
         'slide-up': 'slide-up 0.5s ease-out',
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out'
-      }
+      },
     }
   },
   plugins: [require('tailwindcss-animate'), require('@tailwindcss/typography')]
