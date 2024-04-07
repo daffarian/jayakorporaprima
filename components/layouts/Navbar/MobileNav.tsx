@@ -4,6 +4,7 @@ import { Icons } from '@/components/Icons';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import Authors from '@/components/Authors';
 
 import {
   Accordion,
@@ -31,7 +32,12 @@ export default function MobileNav() {
             {iconMenu}
           </span>
         </SheetTrigger>
-        <SheetContent>
+        <SheetContent
+          side={'top'}
+          className="flex flex-col justify-center text-center"
+        >
+          <Authors />
+          <hr />
           <div>
             <Link
               onClick={() => {
@@ -42,9 +48,9 @@ export default function MobileNav() {
             >
               Home
             </Link>
-            <Separator className="mt-4" />
           </div>
-          <div className="mt-4">
+          <hr />
+          <div className="">
             <Link
               onClick={() => {
                 setIsOpen(!isOpen);
@@ -54,32 +60,31 @@ export default function MobileNav() {
             >
               About
             </Link>
-            <Separator className="mt-4" />
           </div>
-          <Accordion type="multiple" className="w-full">
-            <AccordionItem value="item-1">
-              <AccordionTrigger>Product & Service</AccordionTrigger>
-              <AccordionContent>
-                Business Consultant
-              </AccordionContent>
-              <AccordionContent>Parking Solution</AccordionContent>
-              <AccordionContent>Security System Solution</AccordionContent>
-              <AccordionContent>Machinery & Equipment</AccordionContent>
-            </AccordionItem>
-
-            <div className="mt-4">
-              <Link
-                onClick={() => {
-                  setIsOpen(!isOpen);
-                }}
-                className="text-sm hover:text-primary"
-                href="/contact"
-              >
-                Contact
-              </Link>
-              <Separator className="mt-4" />
-            </div>
-          </Accordion>
+          <hr />
+          <div className="">
+            <Link
+              onClick={() => {
+                setIsOpen(!isOpen);
+              }}
+              className="text-sm hover:text-primary"
+              href="/"
+            >
+              Products & Services
+            </Link>
+          </div>
+          <hr />
+          <div className="">
+            <Link
+              onClick={() => {
+                setIsOpen(!isOpen);
+              }}
+              className="text-sm hover:text-primary"
+              href="/contact"
+            >
+              Contact
+            </Link>
+          </div>
         </SheetContent>
       </Sheet>
     </div>
