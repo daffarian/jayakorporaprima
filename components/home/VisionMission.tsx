@@ -1,7 +1,7 @@
 import { CheckList } from "../List";
 export default function VisionMission() {
   return (
-    <section className="mt-20">
+    <section className="mt-10">
       <div className="grid grid-cols-1 md:grid-cols-2">
         <div className="bg-primary py-10 px-4 flex justify-end flex-row">
           <div className="w-[5%] h-96 bg-accent absolute left-0"></div>

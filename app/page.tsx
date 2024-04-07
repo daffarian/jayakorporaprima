@@ -3,6 +3,7 @@ import Contact from '@/components/home/Contact';
 import Hero from '@/components/home/Hero';
 import Partners from '@/components/home/Partners';
 import ProductServices from '@/components/home/ProductServices';
+import Services from '@/components/home/Services';
 import VisionMission from '@/components/home/VisionMission';
 import Products from '@/components/home/Products';
 export default async function Home() {
@@ -15,6 +16,7 @@ export default async function Home() {
       <Products/>
       {/* <ProductServices /> */}
       <Partners />
+      <Services/>
       <Contact />
     </main>
   );

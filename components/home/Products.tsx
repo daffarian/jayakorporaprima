@@ -34,7 +34,7 @@ export default function Products() {
               <li>X-Tray Machine for Security</li>
             </ul>
           </div>
-          <div className="absolute w-full h-1/2 bg-primary bottom-0 z-[-1]"></div>
+          <div className="absolute w-full h-1/5 lg:h-1/2 bg-primary bottom-0 z-[-1]"></div>
         </div>
       </div>
     </section>
