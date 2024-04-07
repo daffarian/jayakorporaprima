@@ -25,6 +25,20 @@ export default function Hero() {
         </p>
       </div>
       <div className="absolute bottom-0 w-full h-1/5 bg-primary z-[1] flex flex-col lg:items-center  items-start justify-end gap-4 pb-8">
+        <Image
+          src={'/images/decoration/pattern/item-2.svg'}
+          alt="pattern 2"
+          width={100}
+          height={100}
+          className="absolute -top-14 right-10"
+        />
+        <Image
+          src={'/images/decoration/pattern/o.svg'}
+          alt="pattern 2"
+          width={100}
+          height={50}
+          className="absolute -bottom-10 right-28 animate-[spin_20s_linear_0s_infinite] duration-[5000]"
+        />
         <div className="flex flex-col  lg:max-w-2xl lg:justify-center lg:mb-20 gap-6 container mx-auto">
           {/* <h1 className="lg:text-7xl text-5xl text-white">
             Access Control System

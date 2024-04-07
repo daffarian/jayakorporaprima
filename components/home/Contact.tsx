@@ -32,10 +32,10 @@ export default function Contact() {
                 {/* <h3 className="text-xl">Email</h3> */}
                 <a
                   className="text-slate-500  mt-2 hover:underline inline-flex flex-row gap-2 item-center"
-                  href="mailto:corporate@jayakorporaprima.co.id"
+                  href="mailto:lucky@jayakorporaprima.co.id"
                 >
                   <Icons.mail className="text-accent" />
-                  corporate@jayakorporaprima.co.id
+                  lucky@jayakorporaprima.co.id
                 </a>
               </div>
               {/* Address */}

@@ -1,10 +1,9 @@
 /* eslint-disable react/no-unescaped-entities */
-'use client';
 import Image from 'next/image';
 export default function About() {
   return (
-    <section className="pt-10 container ">
-      <div className="pt-10 grid grid-cols-1 md:grid-cols-2 md:gap-10 place-items-center">
+    <section className="pt-10 container relative">
+      <div className="grid grid-cols-1 md:grid-cols-2 md:gap-10 place-items-center">
         <Image
           className=""
           src={'/images/decoration/decoration-1.jpg'}
@@ -12,14 +11,21 @@ export default function About() {
           height={200}
           alt="id"
         />
-        <div>
+        <div className='relative'>
+          <Image
+            src={'/images/decoration/pattern/dot.svg'}
+            alt="pattern dot"
+            width={100}
+            height={100}
+            className="absolute top-5 right-8"
+          />
           <h2 className="pt-10">ABOUT US</h2>
           <Image
             src={'/images/jkp-logo-2.png'}
             alt="logo jkp"
             width={200}
             height={100}
-            className='mt-5'
+            className="mt-5"
           />
           <p className="mt-5">
             PT. Jaya Korpora Prima (JKP) is a company engaged in parking

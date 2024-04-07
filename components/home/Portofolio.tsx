@@ -14,7 +14,7 @@ export default function Portofolio() {
           <li>RSUD Pelabuhan Ratu, Sukabumi</li>
           <li>RS Jantung, Bandung</li>
           <li>RSU Citra Sari Husada, Karawang</li>
-          <li>Prama Toserba Ciparay,Bandung</li>
+          <li>Prama Toserba Ciparay, Bandung</li>
           <li>Gedung Alumni IPB, Bogor</li>
           <li>Hotel El-Royal, Bandung</li>
           <li>Hotel Savoy Homan, Bandung</li>

@@ -9,7 +9,7 @@ import 'swiper/css';
 import Image from 'next/image';
 export default function Partners() {
   return (
-    <section className="py-10 bg-primary">
+    <section className="py-10 px-4 bg-primary">
       {/* <h2 className="py-10 bg-gradient-to-r from-logo to-red-500 via-indigo-500 rounded-[2rem] px-4 text-transparent bg-clip-text">
         {' '}
         Collaborating with strategic partners to expand market reach and
@@ -23,7 +23,7 @@ export default function Partners() {
         centeredSlides={false}
         slidesPerView={2}
         pagination={{ clickable: true }}
-        autoplay={{ delay: 1000, pauseOnMouseEnter: true, waitForTransition:true}}
+        autoplay={{ delay: 2000, pauseOnMouseEnter: true, waitForTransition:true}}
         freeMode={{momentum:true, momentumBounce:false}}
         className='py-10 bg-primary'
       >
