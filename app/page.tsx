@@ -6,6 +6,7 @@ import ProductServices from '@/components/home/ProductServices';
 import Services from '@/components/home/Services';
 import VisionMission from '@/components/home/VisionMission';
 import Products from '@/components/home/Products';
+import Portofolio from '@/components/home/Portofolio';
 export default async function Home() {
   
   return (
@@ -17,6 +18,7 @@ export default async function Home() {
       {/* <ProductServices /> */}
       <Partners />
       <Services/>
+      <Portofolio/>
       <Contact />
     </main>
   );
