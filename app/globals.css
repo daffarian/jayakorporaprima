@@ -20,13 +20,13 @@
   }
 
   ul {
-    @apply font-medium ;
+    @apply font-medium text-lg ;
   }
   li {
-    @apply font-medium ;
+    @apply font-medium text-lg ;
   }
   a {
-    @apply font-medium ;
+    @apply font-medium text-lg ;
   }
 }
 

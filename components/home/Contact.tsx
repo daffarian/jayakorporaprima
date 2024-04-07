@@ -2,10 +2,11 @@ import { Icons } from '../Icons';
 import Image from 'next/image';
 export default function Contact() {
   return (
-    <section className="bg-primary py-10">
+    <section className="bg-primary pt-10 relative">
+      
       <div className=" px-4 py-10">
         <h2 className="text-white">GET IN TOUCH</h2>
-        <div className='flex flex-col lg:flex-row lg:gap-10'>
+        <div className="flex flex-col lg:flex-row lg:gap-10">
           <Image
             className="mx-auto"
             src={'/images/decoration/decoration-4.png'}
@@ -13,7 +14,7 @@ export default function Contact() {
             width={300}
             height={300}
           />
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 bg-white rounded-xl p-4">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 bg-white rounded-xl p-4 relative">
             <address className="grid grid-cols-1 gap-2 not-italic">
               {/* Contact */}
 
@@ -62,9 +63,7 @@ export default function Contact() {
           </div>
         </div>
       </div>
-      <p className="text-white text-center px-4 mt-5">
-        Copyright &copy; 2024 | PT Jaya Korpora Prima | All Rights Reserved
-      </p>
+      
     </section>
   );
 }

@@ -68,7 +68,7 @@ export default function MobileNav() {
                 setIsOpen(!isOpen);
               }}
               className="text-sm hover:text-primary"
-              href="/"
+              href="/products&services"
             >
               Products & Services
             </Link>

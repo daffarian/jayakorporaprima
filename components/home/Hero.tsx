@@ -37,7 +37,7 @@ export default function Hero() {
           alt="pattern 2"
           width={100}
           height={50}
-          className="absolute -bottom-10 right-28 animate-[spin_20s_linear_0s_infinite] duration-[5000]"
+          className="absolute -bottom-10 right-28 animate-[spin_20s_linear_0s_infinite]"
         />
         <div className="flex flex-col  lg:max-w-2xl lg:justify-center lg:mb-20 gap-6 container mx-auto">
           {/* <h1 className="lg:text-7xl text-5xl text-white">
