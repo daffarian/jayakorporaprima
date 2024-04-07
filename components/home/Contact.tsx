@@ -1,9 +1,16 @@
 import { Icons } from '../Icons';
 import Image from 'next/image';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Hubungi Kami - PT. Jaya Korpora Prima (JKP)',
+  description:
+    ' Segera hubungi tim kami di PT. Jaya Korpora Prima (JKP) untuk konsultasi lebih lanjut mengenai layanan manajemen parkir, teknologi parkir, dan sistem keamanan terintegrasi terbaru yang kami tawarkan untuk properti Anda.'
+};
+
 export default function Contact() {
   return (
     <section className="bg-primary pt-10 relative">
-      
       <div className=" px-4 py-10">
         <h2 className="text-white">GET IN TOUCH</h2>
         <div className="flex flex-col lg:flex-row lg:gap-10">
@@ -63,7 +70,6 @@ export default function Contact() {
           </div>
         </div>
       </div>
-      
     </section>
   );
 }
