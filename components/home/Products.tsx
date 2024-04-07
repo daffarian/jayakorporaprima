@@ -1,11 +1,13 @@
-export default function Products(){
+export default function Products() {
   return (
     <section>
-      <div className="mt-20 px-4">
+      <div className="mt-20">
         <h2 className="text-center">PRODUCTS OFFERED</h2>
-        <div className="mt-10 flex flex-col gap-10 md:flex-row justify-center">
-          <div className="justify-center flex items-center flex-col gap-5">
-            <h3 className="text-center leading-none text-lg bg-accent p-2 text-logo inline-flex">Parking <br /> Equipment</h3>
+        <div className="mt-10 flex flex-col relative gap-10 md:flex-row justify-center pb-5 h-full">
+          <div className="justify-center flex items-center flex-col gap-5 px-4">
+            <h3 className="text-center leading-none text-lg bg-accent p-2 text-logo inline-flex">
+              Parking <br /> Equipment
+            </h3>
             <ul className="list-disc list-inside bg-gray-200 p-4">
               <li>Barrier gate (Italy & China)</li>
               <li>Pos Parkir</li>
@@ -18,7 +20,9 @@ export default function Products(){
             </ul>
           </div>
           <div className="justify-center flex items-center flex-col gap-5">
-            <h3 className="text-center leading-none text-lg bg-accent p-2 text-logo inline-flex">Integrated Security <br /> System</h3>
+            <h3 className="text-center leading-none text-lg bg-accent p-2 text-logo inline-flex">
+              Integrated Security <br /> System
+            </h3>
             <ul className="list-disc list-inside bg-gray-200 p-4">
               <li>Security Portals</li>
               <li>Swing Gates</li>
@@ -30,6 +34,7 @@ export default function Products(){
               <li>X-Tray Machine for Security</li>
             </ul>
           </div>
+          <div className="absolute w-full h-1/2 bg-primary bottom-0 z-[-1]"></div>
         </div>
       </div>
     </section>
