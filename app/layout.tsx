@@ -1,15 +1,15 @@
-import {quicksand } from '../components/fonts';
+import { quicksand } from '../components/fonts';
 import './globals.css';
 import Header from '@/components/layouts/Header';
 import Footer from '@/components/layouts/Footer';
 import { Metadata } from 'next';
 
-
 export const metadata: Metadata = {
   title:
     'PT. Jaya Korpora Prima (JKP) - Solusi Terdepan untuk Manajemen Parkir & Keamanan Properti',
   description:
-    'PT. Jaya Korpora Prima (JKP) merupakan pilihan utama Anda dalam layanan manajemen parkir, teknologi parkir, kontrol akses, dan sistem keamanan terintegrasi. Sebagai distributor eksklusif peralatan parkir dan sistem keamanan terkemuka dunia, kami mendukung properti Anda dengan kemampuan dan keahlian yang luas.'
+    'PT. Jaya Korpora Prima (JKP) merupakan pilihan utama Anda dalam layanan manajemen parkir, teknologi parkir, kontrol akses, dan sistem keamanan terintegrasi. Sebagai distributor eksklusif peralatan parkir dan sistem keamanan terkemuka dunia, kami mendukung properti Anda dengan kemampuan dan keahlian yang luas.',
+  metadataBase: new URL('https://jayakorporaprima.vercel.app')
 };
 
 export default function RootLayout({
