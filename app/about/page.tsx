@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 };
 export default function Page() {
   return (
-    <main className="mt-10">
+    <main className="pt-10">
       <About />
       <VisionMission />
     </main>

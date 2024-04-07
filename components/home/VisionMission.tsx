@@ -72,9 +72,9 @@ export default function VisionMission() {
       <Image
         src={'/images/decoration/pattern/o.svg'}
         alt="pattern o"
-        width={200}
+        width={150}
         height={200}
-        className="absolute -bottom-7 animate-[spin_30s_linear_0s_infinite] -right-28 z-[0]"
+        className="absolute -bottom-7  -right-20 z-[0]"
       />
     </section>
   );
