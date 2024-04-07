@@ -1,8 +1,9 @@
-import type { Metadata } from 'next';
 import {quicksand } from '../components/fonts';
 import './globals.css';
 import Header from '@/components/layouts/Header';
 import Footer from '@/components/layouts/Footer';
+import { Metadata } from 'next';
+
 
 export const metadata: Metadata = {
   title:
