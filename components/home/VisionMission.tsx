@@ -2,7 +2,7 @@ import { CheckList } from '../List';
 import Image from 'next/image';
 export default function VisionMission() {
   return (
-    <section className="mt-10 relative">
+    <section className="mt-10 relative overflow-hidden">
       <div className="grid grid-cols-1 md:grid-cols-2">
         <div className="bg-primary py-10 px-4 flex justify-end flex-row relative">
           <Image
