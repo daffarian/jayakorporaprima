@@ -3,7 +3,7 @@ import Image from "next/image";
 import ParkingEquipment from "@/components/home/Products/ParkingEquipment"
 export default function Page(){
   return (
-    <main className="pt-20 h-[35rem] relative">
+    <main className="pt-20 h-svh relative">
       <ParkingEquipment />
       <Image
         src={'/images/decoration/pattern/dot.svg'}

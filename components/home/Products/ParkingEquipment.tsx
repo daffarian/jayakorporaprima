@@ -1,6 +1,7 @@
+import { PartnerParkingEquipment } from "../Partners";
 export default function ParkingEquipment(){
   return (
-    <div className="justify-center flex items-center flex-col gap-5 px-4">
+    <div className="justify-center flex items-center flex-col gap-5">
       <h3 className="text-center leading-none text-lg bg-accent p-2 text-logo inline-flex">
         Parking <br /> Equipment
       </h3>
@@ -14,6 +15,7 @@ export default function ParkingEquipment(){
         <li>Software Parkir</li>
         <li>Jasa Instalasi Peralatan Parkir</li>
       </ul>
+      <PartnerParkingEquipment/>
     </div>
   );
 }

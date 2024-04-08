@@ -2,7 +2,7 @@ import IntegratedSecurity from "@/components/home/Products/IntegratedSecuritySys
 import Image from "next/image";
 export default function Page(){
   return (
-    <main className="pt-20 h-[35rem] relative">
+    <main className="pt-20 h-svh relative">
       <IntegratedSecurity />
       <Image
         src={'/images/decoration/pattern/item-1.png'}

@@ -1,6 +1,5 @@
 import Products from "@/components/home/Products"
 import Services from "@/components/home/Services"
-import Partners from "@/components/home/Partners"
 import { Metadata } from "next"
 
 export const metadata: Metadata = {
@@ -11,7 +10,7 @@ export const metadata: Metadata = {
 
 export default function Page(){
   return(
-    <main className="pt-[4.5rem]">
+    <main className="pt-[4.5rem] ">
       <Services/>
     </main>
   )

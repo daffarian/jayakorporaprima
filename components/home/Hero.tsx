@@ -19,11 +19,11 @@ export default function Hero() {
         src={'/images/hero-background.jpg'}
       ></Image> */}
       <div className="absolute w-full h-full z-[] bg-gradient-to-t from-black/20"></div>
-      <div className="absolute bottom-1/4 p-5  -translate-y-10 h-1/4 bg-white z-[1] flex flex-col items-center justify-center gap-4 pb-8 rounded-r-md">
+      {/* <div className="absolute bottom-1/4 p-5  -translate-y-10 h-1/4 bg-white z-[1] flex flex-col items-center justify-center gap-4 pb-8 rounded-r-md">
         <p className="text-logo text-5xl font-bold">
           Company <br className="lg:hidden" /> Profile
         </p>
-      </div>
+      </div> */}
       <div className="absolute bottom-0 w-full h-1/5 bg-primary z-[1] flex flex-col lg:items-center  items-start justify-end gap-4 pb-8">
         <Image
           src={'/images/decoration/pattern/item-2.svg'}

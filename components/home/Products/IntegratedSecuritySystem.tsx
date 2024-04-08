@@ -1,3 +1,4 @@
+import { PartnerSecurity } from "../Partners";
 export default function IntegratedSecuritySystem() {
   return (
     <div className="justify-center flex items-center flex-col gap-5">
@@ -14,6 +15,7 @@ export default function IntegratedSecuritySystem() {
         <li>Walk Through Metal Detector</li>
         <li>X-Tray Machine for Security</li>
       </ul>
+      <PartnerSecurity/>
     </div>  
   );
 }

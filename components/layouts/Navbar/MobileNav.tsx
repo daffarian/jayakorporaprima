@@ -25,7 +25,7 @@ export default function MobileNav() {
     iconMenu = Icons.menu;
   }
   return (
-    <div className="lg:hidden">
+    <div className="lg:hidden ">
       <Sheet open={isOpen} onOpenChange={setIsOpen}>
         <SheetTrigger asChild>
           <span className="hover:bg-transparent cursor-pointer">
@@ -34,7 +34,7 @@ export default function MobileNav() {
         </SheetTrigger>
         <SheetContent
           side={'top'}
-          className="flex flex-col justify-center text-center"
+          className="flex flex-col justify-center text-center text-lg font-medium"
         >
           <Authors />
 
@@ -44,7 +44,7 @@ export default function MobileNav() {
               onClick={() => {
                 setIsOpen(!isOpen);
               }}
-              className="text-sm hover:text-logo"
+              className="hover:text-logo"
               href="/"
             >
               Home
@@ -57,7 +57,7 @@ export default function MobileNav() {
               onClick={() => {
                 setIsOpen(!isOpen);
               }}
-              className="text-sm hover:text-logo"
+              className="hover:text-logo"
               href="/about"
             >
               About
@@ -70,24 +70,25 @@ export default function MobileNav() {
               onClick={() => {
                 setIsOpen(!isOpen);
               }}
-              className="text-sm hover:text-logo"
+              className="hover:text-logo"
               href="/vision-&-mission"
             >
               Vison & Mission
             </Link>
           </div>
 
+          {/* Products */}
           <hr />
           <Accordion type="single" collapsible>
             <AccordionItem value="item-1">
-              <AccordionTrigger>Products</AccordionTrigger>
+              <AccordionTrigger className="text-lg">Products</AccordionTrigger>
               <AccordionContent>
                 <div className="">
                   <Link
                     onClick={() => {
                       setIsOpen(!isOpen);
                     }}
-                    className="text-sm hover:text-logo"
+                    className="hover:text-logo text-base"
                     href="/products/parking-equipment"
                   >
                     Parking Equipment
@@ -100,7 +101,7 @@ export default function MobileNav() {
                     onClick={() => {
                       setIsOpen(!isOpen);
                     }}
-                    className="text-sm hover:text-logo"
+                    className="hover:text-logo text-base"
                     href="/products/integrated-security"
                   >
                     Integrated Security System
@@ -110,26 +111,45 @@ export default function MobileNav() {
             </AccordionItem>
           </Accordion>
 
-          {/* <hr /> */}
-          <div className="">
-            <Link
-              onClick={() => {
-                setIsOpen(!isOpen);
-              }}
-              className="text-sm hover:text-logo"
-              href="/services"
-            >
-              Services
-            </Link>
-          </div>
+          {/* Services */}
+          <Accordion type="single" collapsible>
+            <AccordionItem value="item-1">
+              <AccordionTrigger className="text-lg">Services</AccordionTrigger>
+              <AccordionContent>
+                <div className="">
+                  <Link
+                    onClick={() => {
+                      setIsOpen(!isOpen);
+                    }}
+                    className="hover:text-logo text-base"
+                    href="/services/profit-sharing"
+                  >
+                    Profit Sharing
+                  </Link>
+                </div>
+              </AccordionContent>
+              <AccordionContent>
+                <div className="">
+                  <Link
+                    onClick={() => {
+                      setIsOpen(!isOpen);
+                    }}
+                    className="hover:text-logo text-base"
+                    href="/services/technical-assistance"
+                  >
+                    Technical Assistance
+                  </Link>
+                </div>
+              </AccordionContent>
+            </AccordionItem>
+          </Accordion>
 
-          <hr />
           <div className="">
             <Link
               onClick={() => {
                 setIsOpen(!isOpen);
               }}
-              className="text-sm hover:text-logo"
+              className="hover:text-logo"
               href="/contact"
             >
               Contact

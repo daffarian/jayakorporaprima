@@ -1,7 +1,6 @@
 import About from '@/components/home/About';
 import Contact from '@/components/home/Contact';
 import Hero from '@/components/home/Hero';
-import Partners from '@/components/home/Partners';
 import Services from '@/components/home/Services';
 import VisionMission from '@/components/home/VisionMission';
 import Products from '@/components/home/Products';
@@ -14,11 +13,10 @@ export default async function Home() {
     <main>
       <Hero />
       <About />
-      <VisionMission/>
-      <Products/>
-      <Partners />
-      <Services/>
-      <Portofolio/>
+      <VisionMission />
+      <Products />
+      <Services />
+      <Portofolio />
       <Contact />
     </main>
   );
