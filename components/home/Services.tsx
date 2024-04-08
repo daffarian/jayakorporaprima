@@ -2,13 +2,13 @@
 import Image from "next/image";
 export default function Services(){
   return (
-    <section className="bg-primary px-4 pb-10 relative">
+    <section className="bg-primary px-4 py-10 relative">
       <Image
         src={'/images/decoration/pattern/dot.svg'}
         alt="pattern dot"
         width={100}
         height={100}
-        className="absolute -top-80 left-3 z-[-1]"
+        className="absolute top-1 left-3 z-[0]"
       />
       <p className="text-accent text-2xl font-bold px-10 text-right">
         JK Parking

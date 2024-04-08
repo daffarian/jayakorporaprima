@@ -103,7 +103,7 @@ export default function MobileNav() {
                     className="text-sm hover:text-logo"
                     href="/products/integrated-security"
                   >
-                    Integrated Security
+                    Integrated Security System
                   </Link>
                 </div>
               </AccordionContent>

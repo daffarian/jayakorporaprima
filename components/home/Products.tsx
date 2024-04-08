@@ -1,5 +1,5 @@
 import ParkingEquipment from './Products/ParkingEquipment';
-import IntegratedSecurity from './Products/IntegratedSecurity';
+import IntegratedSecurity from './Products/IntegratedSecuritySystem';
 export default function Products() {
   return (
     <section className="relative">

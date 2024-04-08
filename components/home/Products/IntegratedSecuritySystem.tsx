@@ -1,4 +1,4 @@
-export default function IntegratedSecurity() {
+export default function IntegratedSecuritySystem() {
   return (
     <div className="justify-center flex items-center flex-col gap-5">
       <h3 className="text-center leading-none text-lg bg-accent p-2 text-logo inline-flex">

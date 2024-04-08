@@ -1,4 +1,4 @@
-import IntegratedSecurity from "@/components/home/Products/IntegratedSecurity"
+import IntegratedSecurity from "@/components/home/Products/IntegratedSecuritySystem"
 import Image from "next/image";
 export default function Page(){
   return (
