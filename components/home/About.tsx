@@ -11,7 +11,7 @@ export default function About() {
           height={200}
           alt="id"
         />
-        <div className='relative'>
+        <div className="relative">
           <Image
             src={'/images/decoration/pattern/dot.svg'}
             alt="pattern dot"
@@ -20,13 +20,6 @@ export default function About() {
             className="absolute top-5 right-8"
           />
           <h2 className="pt-10">ABOUT US</h2>
-          <Image
-            src={'/images/jkp-logo-2.png'}
-            alt="logo jkp"
-            width={200}
-            height={100}
-            className="mt-5"
-          />
           <p className="mt-5">
             PT. Jaya Korpora Prima (JKP) is a company engaged in parking
             management services, parking equipment & technology, access control,

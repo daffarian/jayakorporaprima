@@ -23,15 +23,15 @@ export default function VisionMission() {
           <div className="flex flex-row-reverse gap-5 w-[90%] z-[1]">
             <div
               style={{
-                backgroundImage: 'url("/images/decoration/decoration-2.webp")'
+                backgroundImage: 'url("/images/decoration/decoration-3.jpg")'
               }}
-              className="h-96 w-1/2 bg-cover bg-right"
+              className="h-96 w-1/2 bg-cover bg-center"
             ></div>
             <div
               style={{
                 backgroundImage: 'url("/images/decoration/decoration-3.jpg")'
               }}
-              className="h-96 w-1/2 bg-cover bg-center"
+              className="h-96 w-1/2 bg-cover bg-left"
             ></div>
           </div>
         </div>

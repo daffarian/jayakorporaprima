@@ -37,49 +37,99 @@ export default function MobileNav() {
           className="flex flex-col justify-center text-center"
         >
           <Authors />
+
           <hr />
           <div>
             <Link
               onClick={() => {
                 setIsOpen(!isOpen);
               }}
-              className="text-sm hover:text-primary"
+              className="text-sm hover:text-logo"
               href="/"
             >
               Home
             </Link>
           </div>
+
           <hr />
           <div className="">
             <Link
               onClick={() => {
                 setIsOpen(!isOpen);
               }}
-              className="text-sm hover:text-primary"
+              className="text-sm hover:text-logo"
               href="/about"
             >
               About
             </Link>
           </div>
+
           <hr />
           <div className="">
             <Link
               onClick={() => {
                 setIsOpen(!isOpen);
               }}
-              className="text-sm hover:text-primary"
-              href="/products&services"
+              className="text-sm hover:text-logo"
+              href="/vision-&-mission"
             >
-              Products & Services
+              Vison & Mission
             </Link>
           </div>
+
+          <hr />
+          <Accordion type="single" collapsible>
+            <AccordionItem value="item-1">
+              <AccordionTrigger>Products</AccordionTrigger>
+              <AccordionContent>
+                <div className="">
+                  <Link
+                    onClick={() => {
+                      setIsOpen(!isOpen);
+                    }}
+                    className="text-sm hover:text-logo"
+                    href="/products/parking-equipment"
+                  >
+                    Parking Equipment
+                  </Link>
+                </div>
+              </AccordionContent>
+              <AccordionContent>
+                <div className="">
+                  <Link
+                    onClick={() => {
+                      setIsOpen(!isOpen);
+                    }}
+                    className="text-sm hover:text-logo"
+                    href="/products/integrated-security"
+                  >
+                    Integrated Security
+                  </Link>
+                </div>
+              </AccordionContent>
+            </AccordionItem>
+          </Accordion>
+
+          {/* <hr /> */}
+          <div className="">
+            <Link
+              onClick={() => {
+                setIsOpen(!isOpen);
+              }}
+              className="text-sm hover:text-logo"
+              href="/services"
+            >
+              Services
+            </Link>
+          </div>
+
           <hr />
           <div className="">
             <Link
               onClick={() => {
                 setIsOpen(!isOpen);
               }}
-              className="text-sm hover:text-primary"
+              className="text-sm hover:text-logo"
               href="/contact"
             >
               Contact

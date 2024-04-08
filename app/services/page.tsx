@@ -11,9 +11,7 @@ export const metadata: Metadata = {
 
 export default function Page(){
   return(
-    <main className="pt-10">
-      <Products/>
-      <Partners/>
+    <main className="pt-[4.5rem]">
       <Services/>
     </main>
   )

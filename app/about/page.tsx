@@ -1,6 +1,5 @@
 import { Metadata } from 'next';
 import About from '@/components/home/About';
-import VisionMission from '@/components/home/VisionMission';
 export const metadata: Metadata = {
   title:
     'Tentang PT. Jaya Korpora Prima (JKP) - Inovasi Teknologi untuk Keamanan Properti Anda',
@@ -11,7 +10,6 @@ export default function Page() {
   return (
     <main className="pt-10">
       <About />
-      <VisionMission />
     </main>
   );
 }
