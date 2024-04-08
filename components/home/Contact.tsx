@@ -1,5 +1,6 @@
 import { Icons } from '../Icons';
 import Image from 'next/image';
+import { TypeAnimation } from '../TypeAnimation';
 
 
 
@@ -7,7 +8,9 @@ export default function Contact() {
   return (
     <section className="bg-primary pt-10 relative">
       <div className=" px-4 py-10">
-        <h2 className="text-white">GET IN TOUCH</h2>
+        <h2 className="text-white">
+          <TypeAnimation>GET IN TOUCH</TypeAnimation>
+        </h2>
         <div className="flex flex-col lg:flex-row lg:gap-10">
           <Image
             className="mx-auto"

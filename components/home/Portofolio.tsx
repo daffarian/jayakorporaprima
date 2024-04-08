@@ -1,4 +1,6 @@
 import Image from "next/image";
+import { TypeAnimation } from "../TypeAnimation";
+import CountAnimation from "../animation/CountAnimation";
 export default function Portofolio() {
   return (
     <section className="grid grid-cols-1 md:grid-cols-2 gap-5 relative ">
@@ -10,7 +12,9 @@ export default function Portofolio() {
         className="absolute -top-0 left-0 z-[0] -scale-x-100"
       />
       <div className="px-4 mt-20">
-        <h2>OUR PORTOFOLIO</h2>
+        <h2>
+          <TypeAnimation>OUR PORTOFOLIO</TypeAnimation>
+        </h2>
         <ol className="list-decimal list-inside mt-5">
           <li>Susu Murni Lembang, Bandung</li>
           <li>Ruko Sektor 7, BSD</li>

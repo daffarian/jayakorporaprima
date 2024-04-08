@@ -2,6 +2,8 @@
 import Image from 'next/image';
 import ProfitSharing from './Services/ProfitSharing';
 import TechnicalAssistance from './Services/TechnicalAssistance';
+import { TypeAnimation } from '../TypeAnimation';
+import { FadeInUp } from '../animation/FadeInUp';
 export default function Services() {
   return (
     <section className="bg-primary px-4 py-10 relative">
@@ -16,19 +18,27 @@ export default function Services() {
         JK Parking
       </p>
       <div className="mt-5">
-        <h2 className="text-white">SERVICES OFFERED</h2>
-        <p className="text-slate-300 mt-5">
-          We have experience serving parking management services to more than 50
-          locations spread throughout Indonesia. We are proud to be a trusted
-          partner byprioritizing professional services, responsive
-          communication, experienced human resources,coordinating with the
-          surrounding community for smoothoperations and we also provide a
-          transparent incomeplatform for property owners.
-        </p>
+        <h2 className="text-white">
+          <TypeAnimation>SERVICES OFFERED</TypeAnimation>
+        </h2>
+        <FadeInUp>
+          <p className="text-slate-300 mt-5">
+            We have experience serving parking management services to more than
+            50 locations spread throughout Indonesia. We are proud to be a
+            trusted partner byprioritizing professional services, responsive
+            communication, experienced human resources,coordinating with the
+            surrounding community for smoothoperations and we also provide a
+            transparent incomeplatform for property owners.
+          </p>
+        </FadeInUp>
       </div>
       <div className="mt-14 grid grid-cols-1 md:grid-cols-2 gap-14">
-        <ProfitSharing />
-        <TechnicalAssistance />
+        <FadeInUp>
+          <ProfitSharing />
+        </FadeInUp>
+        <FadeInUp>
+          <TechnicalAssistance />
+        </FadeInUp>
       </div>
     </section>
   );

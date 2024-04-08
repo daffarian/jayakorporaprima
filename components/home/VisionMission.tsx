@@ -1,5 +1,8 @@
 import { CheckList } from '../List';
 import Image from 'next/image';
+import { TypeAnimation } from '../TypeAnimation';
+import { FadeInUp } from '../animation/FadeInUp';
+import { FadeInLeft } from '../animation/FadeInLeft';
 export default function VisionMission() {
   return (
     <section className="mt-10 relative overflow-hidden">
@@ -36,36 +39,49 @@ export default function VisionMission() {
           </div>
         </div>
         <div className="px-4 pb-10">
-          <h2 className="mt-10 md:mt-0">VISION & MISSION</h2>
-          <p className="mt-5">
-            Become a growing company and continue to innovate in technological
-            advances, supported by experienced and competent human resources.
-          </p>
+          <h2 className="mt-10 md:mt-0">
+            <TypeAnimation>VISION & MISSION</TypeAnimation>
+          </h2>
+          <FadeInUp>
+            <p className="mt-5">
+              Become a growing company and continue to innovate in technological
+              advances, supported by experienced and competent human resources.
+            </p>
+          </FadeInUp>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mt-10">
-            <div className="flex flex-row items-center gap-5">
-              <CheckList />
-              <p className="text-logo font-semibold">
-                Involving technology in operational activities
-              </p>
-            </div>
-            <div className="flex flex-row items-center gap-5">
-              <CheckList />
-              <p className="text-logo font-semibold">
-                Have experienced and competent humanresources.
-              </p>
-            </div>
-            <div className="flex flex-row items-center gap-5">
-              <CheckList />
-              <p className="text-logo font-semibold">
-                Selling world-class quality goods
-              </p>
-            </div>
-            <div className="flex flex-row items-center gap-5">
-              <CheckList />
-              <p className="text-logo font-semibold">
-                Become a reliable partner
-              </p>
-            </div>
+            <FadeInLeft>
+              <div className="flex flex-row items-center gap-5">
+                <CheckList />
+                <p className="text-logo font-semibold">
+                  Involving technology in operational activities
+                </p>
+              </div>
+            </FadeInLeft>
+            <FadeInLeft>
+              {' '}
+              <div className="flex flex-row items-center gap-5">
+                <CheckList />
+                <p className="text-logo font-semibold">
+                  Have experienced and competent humanresources.
+                </p>
+              </div>
+            </FadeInLeft>
+            <FadeInLeft>
+              <div className="flex flex-row items-center gap-5">
+                <CheckList />
+                <p className="text-logo font-semibold">
+                  Selling world-class quality goods
+                </p>
+              </div>
+            </FadeInLeft>
+            <FadeInLeft>
+              <div className="flex flex-row items-center gap-5">
+                <CheckList />
+                <p className="text-logo font-semibold">
+                  Become a reliable partner
+                </p>
+              </div>
+            </FadeInLeft>
           </div>
         </div>
       </div>
